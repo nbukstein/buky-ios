@@ -94,14 +94,22 @@ struct MenuView: View {
                         icon: "wand.and.sparkles",
                         firstColor: Color.tertiaryBrand,
                         lastColor: Color.cuarterlyBrand
-            )
+            ) {
+                router.showScreen(.push) { _ in
+                    CreateStoryView(viewModel: .init())
+                }
+            }
             .padding()
             makeSection(title: Constants.savedStoriesSectionTitle,
                         subtitle: Constants.savedStoriesSectionSubtitle,
                         icon: "bookmark.fill",
                         firstColor: Color.savedColorOne,
                         lastColor: Color.savedColorTwo
-            )
+            ) {
+                router.showScreen(.push) { _ in
+                    SavedStoriesView()
+                }
+            }
             .padding(.horizontal).padding(.top)
         }
     }
@@ -111,13 +119,10 @@ struct MenuView: View {
         subtitle: String,
         icon: String,
         firstColor: Color,
-        lastColor: Color
+        lastColor: Color,
+        action: @escaping () -> Void
     ) -> some View {
-        Button(action: {
-            router.showScreen(.push) { _ in
-                CreateStoryView(viewModel: .init())
-            }
-        }) {
+        Button(action: action) {
             HStack {
                 VStack(alignment: .leading) {
                     Image(systemName: icon)

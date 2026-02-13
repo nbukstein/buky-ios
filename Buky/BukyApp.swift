@@ -26,7 +26,7 @@ struct BukyApp: App {
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Story.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -45,7 +45,6 @@ struct BukyApp: App {
             }
         }
         .modelContainer(sharedModelContainer)
-        .modelContainer(for: Story.self)
         
     }
 }

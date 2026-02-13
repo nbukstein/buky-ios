@@ -6,29 +6,42 @@
 //
 
 import SwiftUI
+import SwiftData
 
 final class StoryTellingViewModel: ObservableObject {
     @Published var story: Story
     @Published var text: String = ""
-    
+
     @Published var storyBody = ""
     @Published var storyTitle = ""
     @Published var isLoading = false
+    @Published var isSaved = false
     @Published var errorMessage: String?
-    
+
+    let isReadOnly: Bool
+
     private var storyText = "" {
         didSet {
-            storyBody = bodyForStory(from: storyText)
-            storyTitle = titleForStory(storyText)
+            storyBody = Self.bodyForStory(from: storyText)
+            storyTitle = Self.titleForStory(storyText)
         }
     }
-    
-    init(story: Story) {
+
+    init(story: Story, isReadOnly: Bool = false) {
         self.story = story
+        self.isReadOnly = isReadOnly
+
+        if isReadOnly, let savedText = story.text {
+            self.storyText = savedText
+            self.storyBody = Self.bodyForStory(from: savedText)
+            self.storyTitle = Self.titleForStory(savedText)
+        }
     }
-    
+
     @MainActor
     func onAppear() async {
+        guard !isReadOnly else { return }
+
         guard let url = URL(string: "https://buky-smart-stories.vercel.app/api/hello") else { return }
         
         // 1. Configurar la URLRequest
@@ -96,12 +109,15 @@ final class StoryTellingViewModel: ObservableObject {
         isLoading = false
     }
 
-    func saveStory() {
-        
+    func saveStory(context: ModelContext) {
+        story.text = storyText
+        context.insert(story)
+        try? context.save()
+        isSaved = true
     }
     
     
-    private func bodyForStory(from inputString: String) -> String {
+    static func bodyForStory(from inputString: String) -> String {
         // The pattern \\[.*?\\] matches:
         // \\[: A literal opening square bracket.
         // .*: Any character (except newline).
@@ -116,7 +132,7 @@ final class StoryTellingViewModel: ObservableObject {
         )
     }
 
-    private func titleForStory(_ text: String) -> String {
+    static func titleForStory(_ text: String) -> String {
         let pattern = #"\[(.*?)\]"#
         if let regex = try? NSRegularExpression(pattern: pattern),
            let match = regex.firstMatch(in: text, range: NSRange(text.startIndex..., in: text)) {
