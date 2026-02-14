@@ -20,6 +20,7 @@ final class Story: Codable {
         case characters
         case lesson
         case language
+        case provider
     }
     
     enum ChildAge: Codable, CaseIterable {
@@ -90,6 +91,7 @@ final class Story: Codable {
     var characters: [Characters]
     var lesson: Lesson?
     var language: String?
+    var provider: String?
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -120,6 +122,7 @@ final class Story: Codable {
         try container.encodeIfPresent(place, forKey: .place)
         try container.encodeIfPresent(lesson, forKey: .lesson)
         try container.encodeIfPresent(language, forKey: .language)
+        try container.encodeIfPresent(provider, forKey: .provider)
     }
     
     init(text: String?,
@@ -129,7 +132,8 @@ final class Story: Codable {
          place: Place,
          characters: [Characters],
          lesson: Lesson,
-         language: String
+         language: String,
+         provider: String
     ) {
         self.text = text
         self.dateCreated = dateCreated
@@ -139,6 +143,7 @@ final class Story: Codable {
         self.characters = characters
         self.lesson = lesson
         self.language = language
+        self.provider = provider
     }
 
     init() {
@@ -150,5 +155,6 @@ final class Story: Codable {
         self.characters = []
         self.lesson = nil
         self.language = nil
+        self.provider = "claude"
     }
 }

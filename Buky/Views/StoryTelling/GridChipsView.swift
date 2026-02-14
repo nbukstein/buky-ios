@@ -99,6 +99,6 @@ struct HorizontalFlowLayout: Layout {
 }
 
 #Preview {
-    GridChipsView(story: .init(text: "", dateCreated: Date(), childAge: .fiveSeven, storyTimeLength: .long, place: .city, characters: [.animals, .dragons], lesson: .empathy, language: ""))
+    GridChipsView(story: .init(text: "", dateCreated: Date(), childAge: .fiveSeven, storyTimeLength: .long, place: .city, characters: [.animals, .dragons], lesson: .empathy, language: "", provider: "claude"))
 }
 

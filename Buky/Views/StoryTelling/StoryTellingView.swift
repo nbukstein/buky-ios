@@ -50,7 +50,7 @@ struct StoryTellingView: View {
         .edgesIgnoringSafeArea(.bottom)
         .onAppear {
             Task {
-                await viewModel.onAppear()
+                await viewModel.onAppear2()
             }
         }
     }

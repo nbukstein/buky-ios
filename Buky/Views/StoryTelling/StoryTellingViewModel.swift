@@ -20,6 +20,8 @@ final class StoryTellingViewModel: ObservableObject {
     @Published var errorMessage: String?
 
     let isReadOnly: Bool
+    
+    let streamingChatAPI = StreamingChatAPI()
 
     private var storyText = "" {
         didSet {
@@ -38,12 +40,27 @@ final class StoryTellingViewModel: ObservableObject {
             self.storyTitle = Self.titleForStory(savedText)
         }
     }
+    
+    @MainActor
+    func onAppear2() async {
+        await streamingChatAPI.streamMessage(story) { chunk in
+            Task { @MainActor in
+                withAnimation(.linear(duration: 0.1)) {
+                    self.storyText += "\(chunk)"
+                }
+            }
+        } onComplete: {
+            self.finishedReceivingStory = true
+        } onError: { error in
+            print(error)
+        }
+    }
 
     @MainActor
     func onAppear() async {
         guard !isReadOnly else { return }
 
-        guard let url = URL(string: "https://buky-smart-stories.vercel.app/api/hello") else { return }
+        guard let url = URL(string: "https://localhost:3000/api/hello") else { return }
         
         // 1. Configurar la URLRequest
         var request = URLRequest(url: url)
