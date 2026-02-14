@@ -108,6 +108,8 @@ struct CreateStoryView: View {
                     .padding()
                 LessonsSectionView(indexSelected: $viewModel.lessonIndex)
                     .padding()
+                AIProviderSectionView(indexSelected: $viewModel.providerIndex)
+                    .padding()
             }
             .frame(maxWidth: .infinity)
         }

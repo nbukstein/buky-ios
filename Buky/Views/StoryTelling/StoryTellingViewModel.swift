@@ -60,7 +60,8 @@ final class StoryTellingViewModel: ObservableObject {
     func onAppear() async {
         guard !isReadOnly else { return }
 
-        guard let url = URL(string: "https://localhost:3000/api/hello") else { return }
+//        guard let url = URL(string: "https://localhost:3000/api/hello") else { return }
+        guard let url = URL(string: "https://buky-smart-stories.vercel.app/api/hello") else { return }
         
         // 1. Configurar la URLRequest
         var request = URLRequest(url: url)

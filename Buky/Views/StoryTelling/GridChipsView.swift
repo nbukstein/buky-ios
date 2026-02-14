@@ -17,6 +17,7 @@ struct GridChipsView: View {
             makeChip(icon: PlaceSectionView.Constants.titleIcon, info: story.place?.title ?? "", color: PlaceSectionView.Constants.color)
             makeChip(icon: "", image: Image(.people), info: story.characters.map {$0.title}.joined(separator: " - "), color: ProtagonistsSectionView.Constants.color)
             makeChip(icon: LessonsSectionView.Constants.titleIcon, info: story.lesson?.title ?? "", color: LessonsSectionView.Constants.color)
+            makeChip(icon: AIProviderSectionView.Constants.titleIcon, info: story.provider?.title ?? "", color: AIProviderSectionView.Constants.color)
         }
     }
 
@@ -99,6 +100,6 @@ struct HorizontalFlowLayout: Layout {
 }
 
 #Preview {
-    GridChipsView(story: .init(text: "", dateCreated: Date(), childAge: .fiveSeven, storyTimeLength: .long, place: .city, characters: [.animals, .dragons], lesson: .empathy, language: "", provider: "claude"))
+    GridChipsView(story: .init(text: "", dateCreated: Date(), childAge: .fiveSeven, storyTimeLength: .long, place: .city, characters: [.animals, .dragons], lesson: .empathy, language: "", provider: .claude))
 }
 

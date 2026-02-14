@@ -14,13 +14,15 @@ final class CreateStoryViewModel: ObservableObject {
     @Published var placeIndex: Int?
     @Published var mainCharacterIndexes: [Int] = []
     @Published var lessonIndex: Int?
+    @Published var providerIndex: Int?
 
     var isCreateStoryEnabled : Bool {
         return childAgeIndex != nil &&
         storyLengthIndex != nil &&
         placeIndex != nil &&
         mainCharacterIndexes.count > 0 &&
-        lessonIndex != nil
+        lessonIndex != nil &&
+        providerIndex != nil
     }
 
     func createStory() -> Story {
@@ -28,7 +30,8 @@ final class CreateStoryViewModel: ObservableObject {
         guard let childAgeIndex,
               let storyLengthIndex,
               let placeIndex,
-              let lessonIndex else {
+              let lessonIndex,
+              let providerIndex else {
             fatalError("Story is not fully initialized")
         }
 
@@ -36,6 +39,7 @@ final class CreateStoryViewModel: ObservableObject {
         story.storyTimeLength = Story.TimeLength.allCases[storyLengthIndex]
         story.place = Story.Place.allCases[placeIndex]
         story.lesson = Story.Lesson.allCases[lessonIndex]
+        story.provider = Story.AIProvider.allCases[providerIndex]
         for mainCharacterIndex in mainCharacterIndexes {
             story.characters.append(Story.Characters.allCases[mainCharacterIndex])
         }

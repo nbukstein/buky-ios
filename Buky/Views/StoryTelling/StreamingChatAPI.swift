@@ -1,6 +1,7 @@
 import Foundation
 class StreamingChatAPI {
-    private let baseURL = "https:localhost:3000"  // ← Cambia esto
+//    private let baseURL = "https:localhost:3000"  // ← Cambia esto
+    private let baseURL = "https://buky-smart-stories.vercel.app"
     
     func streamMessage(
         _ story: Story,
@@ -9,7 +10,7 @@ class StreamingChatAPI {
         onError: @escaping (Error) -> Void
     ) async {
         
-        guard let url = URL(string: "http://localhost:3000/api/hello") else {
+        guard let url = URL(string: "\(baseURL)/api/hello") else {
             onError(APIError.invalidURL)
             return
         }

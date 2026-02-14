@@ -10,6 +10,8 @@ extension Color {
     
     static let savedColorOne = Color(hex: "#60A5FA")
     static let savedColorTwo = Color(hex: "#6366F1")
+
+    static let aiProviderColor = Color(hex: "#10B981")
     
 
     // Neutral Palette

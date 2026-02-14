@@ -34,6 +34,9 @@
     "Castlle" : {
       "comment" : "Title for castlle"
     },
+    "Choose your AI" : {
+      "comment" : "Title for the AI provider section"
+    },
     "City" : {
       "comment" : "Title for city"
     },

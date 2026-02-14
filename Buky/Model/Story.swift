@@ -82,7 +82,12 @@ final class Story: Codable {
         case brave
         case quiteness
     }
-    
+
+    enum AIProvider: String, Codable, CaseIterable {
+        case claude
+        case openai
+    }
+
     var text: String?
     var dateCreated: Date?
     var childAge: ChildAge?
@@ -91,7 +96,7 @@ final class Story: Codable {
     var characters: [Characters]
     var lesson: Lesson?
     var language: String?
-    var provider: String?
+    var provider: AIProvider?
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -103,6 +108,7 @@ final class Story: Codable {
         characters = try container.decodeIfPresent(Array<Characters>.self, forKey: .characters) ?? []
         lesson = try container.decodeIfPresent(Lesson.self, forKey: .lesson)
         language = try container.decodeIfPresent(String.self, forKey: .language)
+        provider = try container.decodeIfPresent(AIProvider.self, forKey: .provider)
     }
 
     func encode(to encoder: any Encoder) throws {
@@ -122,7 +128,7 @@ final class Story: Codable {
         try container.encodeIfPresent(place, forKey: .place)
         try container.encodeIfPresent(lesson, forKey: .lesson)
         try container.encodeIfPresent(language, forKey: .language)
-        try container.encodeIfPresent(provider, forKey: .provider)
+        try container.encodeIfPresent(provider?.rawValue, forKey: .provider)
     }
     
     init(text: String?,
@@ -133,7 +139,7 @@ final class Story: Codable {
          characters: [Characters],
          lesson: Lesson,
          language: String,
-         provider: String
+         provider: AIProvider
     ) {
         self.text = text
         self.dateCreated = dateCreated
@@ -155,6 +161,6 @@ final class Story: Codable {
         self.characters = []
         self.lesson = nil
         self.language = nil
-        self.provider = "claude"
+        self.provider = nil
     }
 }
