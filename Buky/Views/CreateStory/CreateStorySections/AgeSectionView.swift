@@ -57,7 +57,9 @@ struct AgeSectionView: View {
         let isSelected = index == indexSelected
         let opacity = isSelected ? 0.2 : 0
         Button(action: {
-            indexSelected = index
+            Task { @MainActor in
+                indexSelected = index
+            }
         }) {
             VStack {
                 Text(icon)

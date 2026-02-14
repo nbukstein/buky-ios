@@ -53,7 +53,9 @@ struct StoryLengthSectionView: View {
         let checkMarkIcon = isSelected ? "checkmark.circle.fill" : "circle"
         let opacity = isSelected ? 0.2 : 0
         Button(action: {
-            indexSelected = index
+            Task { @MainActor in
+                indexSelected = index
+            }
         }) {
             HStack {
                 Image(systemName: icon)

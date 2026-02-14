@@ -14,7 +14,8 @@ final class StoryTellingViewModel: ObservableObject {
 
     @Published var storyBody = ""
     @Published var storyTitle = ""
-    @Published var isLoading = false
+    @Published var isLoadingStory = false
+    @Published var finishedReceivingStory = false
     @Published var isSaved = false
     @Published var errorMessage: String?
 
@@ -69,7 +70,7 @@ final class StoryTellingViewModel: ObservableObject {
 //                                   "lesson": "empathy"]
 //        
         
-        isLoading = true
+        isLoadingStory = true
         storyText = ""
         
         do {
@@ -99,14 +100,15 @@ final class StoryTellingViewModel: ObservableObject {
                     withAnimation(.linear(duration: 0.1)) {
                         storyText += "\(cleanLine)\n\n"
                     }
-                    isLoading = false
+                    isLoadingStory = false
                     print(cleanLine)
                 }
             }
+            finishedReceivingStory = false
         } catch {
             storyText = "Error de conexión: \(error.localizedDescription)"
         }
-        isLoading = false
+        finishedReceivingStory = true
     }
 
     func saveStory(context: ModelContext) {

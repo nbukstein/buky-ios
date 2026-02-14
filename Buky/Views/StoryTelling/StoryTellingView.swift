@@ -24,7 +24,7 @@ struct StoryTellingView: View {
 
     var body: some View {
         VStack {
-            if viewModel.isLoading {
+            if viewModel.isLoadingStory {
                 loadingView
             } else {
                 contentView
@@ -41,7 +41,7 @@ struct StoryTellingView: View {
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.center)
                 }
-                .disabled(viewModel.isLoading || viewModel.isSaved)
+                .disabled(viewModel.isLoadingStory || viewModel.isSaved)
                 .padding()
                 .padding(.horizontal)
                 .background(.ultraThickMaterial)
@@ -115,11 +115,11 @@ struct StoryTellingView: View {
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     ).overlay(
-                        Color.white.opacity(viewModel.isLoading || viewModel.isSaved ? 0.7 : 0)
+                        Color.white.opacity(!viewModel.finishedReceivingStory || viewModel.isSaved ? 0.7 : 0)
                     )
                 )
                 .cornerRadius(15)
         }
-        .disabled(viewModel.isSaved)
+        .disabled(!viewModel.finishedReceivingStory)
     }
 }

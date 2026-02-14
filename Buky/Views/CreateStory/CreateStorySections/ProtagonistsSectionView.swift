@@ -58,10 +58,12 @@ struct ProtagonistsSectionView: View {
         let isSelected = indexesSelected.contains(index)
         let opacity = isSelected ? 0.2 : 0
         Button(action: {
-            if isSelected {
-                indexesSelected.removeAll(where: { $0 == index })
-            } else {
-                indexesSelected.append(index)
+            Task { @MainActor in
+                if isSelected {
+                    indexesSelected.removeAll(where: { $0 == index })
+                } else {
+                    indexesSelected.append(index)
+                }
             }
         }) {
             VStack {

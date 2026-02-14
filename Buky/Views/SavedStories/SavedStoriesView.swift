@@ -13,6 +13,10 @@ struct SavedStoriesView: View {
 
     @Query(sort: \Story.dateCreated, order: .reverse) private var stories: [Story]
     @Environment(\.router) var router
+    @Environment(\.modelContext) var modelContext
+
+    @State private var storyToDelete: Story?
+    @State private var showDeleteAlert = false
 
     var body: some View {
         Group {
@@ -23,6 +27,20 @@ struct SavedStoriesView: View {
             }
         }
         .navigationTitle("Saved stories")
+        .alert("Delete story", isPresented: $showDeleteAlert) {
+            Button("Delete", role: .destructive) {
+                if let story = storyToDelete {
+                    modelContext.delete(story)
+                    try? modelContext.save()
+                }
+                storyToDelete = nil
+            }
+            Button("Cancel", role: .cancel) {
+                storyToDelete = nil
+            }
+        } message: {
+            Text("Are you sure you want to delete this story? This action cannot be undone.")
+        }
     }
 
     private var emptyStateView: some View {
@@ -62,13 +80,31 @@ struct SavedStoriesView: View {
 
     private func storyCard(story: Story) -> some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text({
-                    let title = StoryTellingViewModel.titleForStory(story.text ?? "")
-                    return title.isEmpty ? "Untitled Story" : title
-                }())
-                .font(.h5SemiBold)
-                .foregroundColor(.white)
-                .lineLimit(2)
+            HStack {
+                Text({
+                        let title = StoryTellingViewModel.titleForStory(story.text ?? "")
+                        return title.isEmpty ? "Untitled Story" : title
+                    }())
+                    .font(.h5SemiBold)
+                    .foregroundColor(.white)
+                    .lineLimit(2)
+
+                Spacer()
+
+                Button {
+                    Task { @MainActor in
+                        storyToDelete = story
+                        showDeleteAlert = true
+                    }
+                } label: {
+                    Image(systemName: "trash")
+                        .font(.system(size: 16))
+                        .foregroundColor(.white.opacity(0.8))
+                        .padding(8)
+                        .background(Color.white.opacity(0.2))
+                        .clipShape(Circle())
+                }
+            }
 
             GridChipsView(story: story)
 
