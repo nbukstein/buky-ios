@@ -52,6 +52,7 @@ struct CreateStoryView: View {
         Button(action: {
             router.showScreen(.push) { _ in
                 StoryTellingView(viewModel: .init(story: viewModel.createStory()))
+                    .modelContainer(BukyApp.sharedModelContainer)
             }
         }) {
             Text("Create story")

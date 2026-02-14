@@ -24,7 +24,7 @@ struct BukyApp: App {
         ]
     }
     
-    var sharedModelContainer: ModelContainer = {
+    static let sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Story.self,
         ])
@@ -44,7 +44,7 @@ struct BukyApp: App {
                     .edgesIgnoringSafeArea(.bottom)
             }
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(BukyApp.sharedModelContainer)
         
     }
 }

@@ -51,6 +51,7 @@ struct SavedStoriesView: View {
                         .onTapGesture {
                             router.showScreen(.push) { _ in
                                 StoryTellingView(viewModel: .init(story: story, isReadOnly: true))
+                                    .modelContainer(BukyApp.sharedModelContainer)
                             }
                         }
                 }

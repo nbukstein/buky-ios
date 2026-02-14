@@ -97,6 +97,7 @@ struct MenuView: View {
             ) {
                 router.showScreen(.push) { _ in
                     CreateStoryView(viewModel: .init())
+                        .modelContainer(BukyApp.sharedModelContainer)
                 }
             }
             .padding()
@@ -108,6 +109,7 @@ struct MenuView: View {
             ) {
                 router.showScreen(.push) { _ in
                     SavedStoriesView()
+                        .modelContainer(BukyApp.sharedModelContainer)
                 }
             }
             .padding(.horizontal).padding(.top)
