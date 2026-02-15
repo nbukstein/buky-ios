@@ -118,6 +118,14 @@ extension Story.Characters {
         case .kings: "🤴"
         }
     }
+
+    var subtypes: [Story.CharacterSubtype] {
+        Story.CharacterSubtype.allCases.filter { $0.protagonistCategory == self }
+    }
+
+    var hasSubtypes: Bool {
+        !subtypes.isEmpty
+    }
 }
 
 #Preview {

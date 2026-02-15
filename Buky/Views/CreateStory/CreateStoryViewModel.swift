@@ -16,13 +16,36 @@ final class CreateStoryViewModel: ObservableObject {
     @Published var lessonIndex: Int?
     @Published var providerIndex: Int?
 
-    var isCreateStoryEnabled : Bool {
+    @Published var animalTypeIndex: Int?
+    @Published var animalName: String = ""
+    @Published var personTypeIndex: Int?
+    @Published var personName: String = ""
+
+    var isCreateStoryEnabled: Bool {
         return childAgeIndex != nil &&
         storyLengthIndex != nil &&
         placeIndex != nil &&
         mainCharacterIndexes.count > 0 &&
         lessonIndex != nil &&
         providerIndex != nil
+    }
+
+    private var selectedCharacters: [Story.Characters] {
+        mainCharacterIndexes.map { Story.Characters.allCases[$0] }
+    }
+
+    var showAnimalSection: Bool { selectedCharacters.contains(.animals) }
+    var showPeopleSection: Bool { selectedCharacters.contains(.people) }
+
+    func onProtagonistsChanged() {
+        if !showAnimalSection {
+            animalTypeIndex = nil
+            animalName = ""
+        }
+        if !showPeopleSection {
+            personTypeIndex = nil
+            personName = ""
+        }
     }
 
     func createStory() -> Story {
@@ -43,7 +66,23 @@ final class CreateStoryViewModel: ObservableObject {
         for mainCharacterIndex in mainCharacterIndexes {
             story.characters.append(Story.Characters.allCases[mainCharacterIndex])
         }
-        
+
+        let animalCases = Story.Characters.animals.subtypes
+        if let animalTypeIndex, animalTypeIndex < animalCases.count {
+            story.animalType = animalCases[animalTypeIndex]
+        }
+        if !animalName.isEmpty {
+            story.animalName = animalName
+        }
+
+        let peopleCases = Story.Characters.people.subtypes
+        if let personTypeIndex, personTypeIndex < peopleCases.count {
+            story.personType = peopleCases[personTypeIndex]
+        }
+        if !personName.isEmpty {
+            story.personName = personName
+        }
+
         if let languageCode = Locale.preferredLanguages.first {
             let locale = Locale(identifier: "en")
             let languageName = locale.localizedString(forLanguageCode: languageCode)

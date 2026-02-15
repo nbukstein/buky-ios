@@ -1,6 +1,7 @@
 import Foundation
+
 class StreamingChatAPI {
-//    private let baseURL = "https:localhost:3000"  // ← Cambia esto
+//    private let baseURL = "http://localhost:3000"  // ← Local
     private let baseURL = "https://buky-smart-stories.vercel.app"
     
     func streamMessage(
@@ -11,13 +12,14 @@ class StreamingChatAPI {
     ) async {
         
         guard let url = URL(string: "\(baseURL)/api/hello") else {
-            onError(APIError.invalidURL)
+            await MainActor.run { onError(APIError.invalidURL) }
             return
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.setValue("utf-8", forHTTPHeaderField: "Accept-Charset")
         request.timeoutInterval = 60
         
         do {
@@ -25,7 +27,7 @@ class StreamingChatAPI {
             let jsonData = try jsonEncoder.encode(story)
             request.httpBody = jsonData
         } catch {
-            onError(error)
+            await MainActor.run { onError(error) }
             return
         }
         
@@ -34,30 +36,40 @@ class StreamingChatAPI {
             let (bytes, response) = try await URLSession.shared.bytes(for: request)
             
             guard let httpResponse = response as? HTTPURLResponse else {
-                onError(APIError.invalidResponse)
+                await MainActor.run { onError(APIError.invalidResponse) }
                 return
             }
             
             guard httpResponse.statusCode == 200 else {
-                onError(APIError.serverError(httpResponse.statusCode))
+                await MainActor.run { onError(APIError.serverError(httpResponse.statusCode)) }
                 return
             }
             
-            var buffer = ""
+            // ✅ CAMBIO CLAVE: Usar Data buffer en lugar de String
+            var dataBuffer = Data()
             
-            // Leer bytes uno por uno
+            // Leer bytes y acumular
             for try await byte in bytes {
-                let character = String(UnicodeScalar(byte))
-                buffer += character
+                dataBuffer.append(byte)
+                
+                // ✅ CAMBIO CLAVE: Intentar decodificar como UTF-8
+                guard let currentString = String(data: dataBuffer, encoding: .utf8) else {
+                    // Si no se puede decodificar, seguir acumulando bytes
+                    // (podemos estar en medio de un carácter multi-byte)
+                    continue
+                }
                 
                 // Detectar fin de mensaje SSE (doble newline)
-                if buffer.hasSuffix("\n\n") {
-                    let lines = buffer.components(separatedBy: "\n\n")
+                if currentString.contains("\n\n") {
+                    let parts = currentString.components(separatedBy: "\n\n")
                     
-                    for line in lines where !line.isEmpty {
-                        // Parsear línea SSE
-                        if line.hasPrefix("data: ") {
-                            let jsonString = line.replacingOccurrences(of: "data: ", with: "")
+                    // Procesar todas las partes completas (excepto la última que puede estar incompleta)
+                    for i in 0..<(parts.count - 1) {
+                        let part = parts[i]
+                        
+                        if part.hasPrefix("data: ") {
+                            let jsonString = part.replacingOccurrences(of: "data: ", with: "")
+                                .trimmingCharacters(in: .whitespacesAndNewlines)
                             
                             // Check si terminó
                             if jsonString == "[DONE]" {
@@ -66,8 +78,8 @@ class StreamingChatAPI {
                             }
                             
                             // Parse JSON
-                            if let data = jsonString.data(using: .utf8),
-                               let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
+                            if let jsonData = jsonString.data(using: .utf8),
+                               let json = try? JSONSerialization.jsonObject(with: jsonData) as? [String: Any] {
                                 
                                 if let text = json["text"] as? String {
                                     await MainActor.run { onChunk(text) }
@@ -83,7 +95,12 @@ class StreamingChatAPI {
                         }
                     }
                     
-                    buffer = ""
+                    // ✅ CAMBIO CLAVE: Mantener la última parte como nuevo buffer
+                    if let lastPart = parts.last, !lastPart.isEmpty {
+                        dataBuffer = Data(lastPart.utf8)
+                    } else {
+                        dataBuffer = Data()
+                    }
                 }
             }
             

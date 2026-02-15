@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 final class Story: Codable {
-    
+
     private enum CodingKeys: String, CodingKey {
         case text
         case dateCreated
@@ -21,14 +21,19 @@ final class Story: Codable {
         case lesson
         case language
         case provider
+        case characterName = "character_name"
+        case animalType = "animal_type"
+        case animalName = "animal_name"
+        case personType = "person_type"
+        case personName = "person_name"
     }
-    
+
     enum ChildAge: Codable, CaseIterable {
         case oneThree
         case threeFive
         case fiveSeven
         case sevenNine
-        
+
         var ageRange: String {
             switch self {
             case .oneThree: "1-3"
@@ -43,7 +48,7 @@ final class Story: Codable {
         case short
         case medium
         case long
-        
+
         var timeRange: String {
             switch self {
             case .short: "1-3"
@@ -52,7 +57,7 @@ final class Story: Codable {
             }
         }
     }
-    
+
     enum Place: String, Codable, CaseIterable {
         case mountain
         case castlle
@@ -88,6 +93,27 @@ final class Story: Codable {
         case openai
     }
 
+    enum CharacterSubtype: String, Codable, CaseIterable {
+        // Animals
+        case dog
+        case cat
+        case frog
+        case elephant
+        case lion
+        case butterfly
+        case cow
+        // People
+        case uncle
+        case aunt
+        case brother
+        case sister
+        case cousinBoy
+        case cousinGirl
+        case grandpa
+        case grandma
+        case person
+    }
+
     var text: String?
     var dateCreated: Date?
     var childAge: ChildAge?
@@ -97,7 +123,11 @@ final class Story: Codable {
     var lesson: Lesson?
     var language: String?
     var provider: AIProvider?
-    
+    var animalType: CharacterSubtype?
+    var animalName: String?
+    var personType: CharacterSubtype?
+    var personName: String?
+
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         text = try container.decodeIfPresent(String.self, forKey: .text)
@@ -109,28 +139,60 @@ final class Story: Codable {
         lesson = try container.decodeIfPresent(Lesson.self, forKey: .lesson)
         language = try container.decodeIfPresent(String.self, forKey: .language)
         provider = try container.decodeIfPresent(AIProvider.self, forKey: .provider)
+        animalType = try container.decodeIfPresent(CharacterSubtype.self, forKey: .animalType)
+        animalName = try container.decodeIfPresent(String.self, forKey: .animalName)
+        personType = try container.decodeIfPresent(CharacterSubtype.self, forKey: .personType)
+        personName = try container.decodeIfPresent(String.self, forKey: .personName)
     }
 
     func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encodeIfPresent(text, forKey: .text)
         try container.encodeIfPresent(dateCreated, forKey: .dateCreated)
-        
+
         let childAgeString = childAge.map(\.ageRange) ?? ""
         try container.encodeIfPresent(childAgeString, forKey: .childAge)
-        
+
         let storyTimeLengthString = storyTimeLength.map(\.timeRange) ?? ""
         try container.encodeIfPresent(storyTimeLengthString, forKey: .storyTimeLength)
-        
+
         let charactersString  = characters.map { $0.rawValue }.joined(separator: ",")
         try container.encodeIfPresent(charactersString, forKey: .characters)
-        
+
         try container.encodeIfPresent(place, forKey: .place)
         try container.encodeIfPresent(lesson, forKey: .lesson)
         try container.encodeIfPresent(language, forKey: .language)
         try container.encodeIfPresent(provider?.rawValue, forKey: .provider)
+
+        try container.encodeIfPresent(animalType, forKey: .animalType)
+        try container.encodeIfPresent(animalName, forKey: .animalName)
+        try container.encodeIfPresent(personType, forKey: .personType)
+        try container.encodeIfPresent(personName, forKey: .personName)
+        var characterDescriptions: [String] = []
+
+        if let animalType {
+            let name = animalName ?? ""
+            if name.isEmpty {
+                characterDescriptions.append("\(animalType.englishArticle) \(animalType.englishName)")
+            } else {
+                characterDescriptions.append("\(animalType.englishArticle) \(animalType.englishName) called \(name)")
+            }
+        }
+
+        if let personType {
+            let name = personName ?? ""
+            if name.isEmpty {
+                characterDescriptions.append("\(personType.englishArticle) \(personType.englishName)")
+            } else {
+                characterDescriptions.append("\(personType.englishArticle) \(personType.englishName) called \(name)")
+            }
+        }
+
+        if !characterDescriptions.isEmpty {
+            try container.encode(characterDescriptions.joined(separator: ", "), forKey: .characterName)
+        }
     }
-    
+
     init(text: String?,
          dateCreated: Date,
          childAge: ChildAge,
@@ -139,7 +201,11 @@ final class Story: Codable {
          characters: [Characters],
          lesson: Lesson,
          language: String,
-         provider: AIProvider
+         provider: AIProvider,
+         animalType: CharacterSubtype? = nil,
+         animalName: String? = nil,
+         personType: CharacterSubtype? = nil,
+         personName: String? = nil,
     ) {
         self.text = text
         self.dateCreated = dateCreated
@@ -150,6 +216,10 @@ final class Story: Codable {
         self.lesson = lesson
         self.language = language
         self.provider = provider
+        self.animalType = animalType
+        self.animalName = animalName
+        self.personType = personType
+        self.personName = personName
     }
 
     init() {
@@ -162,5 +232,9 @@ final class Story: Codable {
         self.lesson = nil
         self.language = nil
         self.provider = nil
+        self.animalType = nil
+        self.animalName = nil
+        self.personType = nil
+        self.personName = nil
     }
 }

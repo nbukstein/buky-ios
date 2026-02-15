@@ -18,6 +18,14 @@ struct GridChipsView: View {
             makeChip(icon: "", image: Image(.people), info: story.characters.map {$0.title}.joined(separator: " - "), color: ProtagonistsSectionView.Constants.color)
             makeChip(icon: LessonsSectionView.Constants.titleIcon, info: story.lesson?.title ?? "", color: LessonsSectionView.Constants.color)
             makeChip(icon: AIProviderSectionView.Constants.titleIcon, info: story.provider?.title ?? "", color: AIProviderSectionView.Constants.color)
+            if let animalType = story.animalType {
+                let info = [animalType.title, story.animalName].compactMap { $0 }.filter { !$0.isEmpty }.joined(separator: " - ")
+                makeChip(icon: CharacterNameSectionView.chipIcon, info: info, color: CharacterNameSectionView.color)
+            }
+            if let personType = story.personType {
+                let info = [personType.title, story.personName].compactMap { $0 }.filter { !$0.isEmpty }.joined(separator: " - ")
+                makeChip(icon: CharacterNameSectionView.chipIcon, info: info, color: CharacterNameSectionView.color)
+            }
         }
     }
 

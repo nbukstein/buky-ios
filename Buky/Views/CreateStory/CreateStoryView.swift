@@ -106,6 +106,29 @@ struct CreateStoryView: View {
                     .padding()
                 ProtagonistsSectionView(indexesSelected: $viewModel.mainCharacterIndexes)
                     .padding()
+                    .onChange(of: viewModel.mainCharacterIndexes) {
+                        viewModel.onProtagonistsChanged()
+                    }
+                if viewModel.showAnimalSection {
+                    CharacterNameSectionView(
+                        sectionTitle: String(localized: "Name your animal"),
+                        sectionIcon: "pawprint.fill",
+                        subtypes: Story.Characters.animals.subtypes,
+                        indexSelected: $viewModel.animalTypeIndex,
+                        characterName: $viewModel.animalName
+                    )
+                    .padding()
+                }
+                if viewModel.showPeopleSection {
+                    CharacterNameSectionView(
+                        sectionTitle: String(localized: "Name your person"),
+                        sectionIcon: "person.fill",
+                        subtypes: Story.Characters.people.subtypes,
+                        indexSelected: $viewModel.personTypeIndex,
+                        characterName: $viewModel.personName
+                    )
+                    .padding()
+                }
                 LessonsSectionView(indexSelected: $viewModel.lessonIndex)
                     .padding()
                 AIProviderSectionView(indexSelected: $viewModel.providerIndex)
