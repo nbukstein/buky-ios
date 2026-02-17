@@ -56,6 +56,14 @@ final class Story: Codable {
             case .long: "7-10"
             }
         }
+
+        var apiValue: String {
+            switch self {
+            case .short: "short"
+            case .medium: "medium"
+            case .long: "long"
+            }
+        }
     }
 
     enum Place: String, Codable, CaseIterable {
@@ -153,7 +161,7 @@ final class Story: Codable {
         let childAgeString = childAge.map(\.ageRange) ?? ""
         try container.encodeIfPresent(childAgeString, forKey: .childAge)
 
-        let storyTimeLengthString = storyTimeLength.map(\.timeRange) ?? ""
+        let storyTimeLengthString = storyTimeLength.map(\.apiValue) ?? ""
         try container.encodeIfPresent(storyTimeLengthString, forKey: .storyTimeLength)
 
         let charactersString  = characters.map { $0.rawValue }.joined(separator: ",")
