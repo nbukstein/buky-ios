@@ -35,7 +35,7 @@ struct StoryTellingView: View {
             if !viewModel.isReadOnly {
                 VStack {
                     bottomStickyButton
-                    Text("Select the configurations to create the story")
+                    Text("If your child liked the story, save it for next time!")
                         .font(.bodySemiBold)
                         .foregroundColor(.gray)
                         .frame(maxWidth: .infinity)
@@ -50,7 +50,7 @@ struct StoryTellingView: View {
         .edgesIgnoringSafeArea(.bottom)
         .onAppear {
             Task {
-                await viewModel.onAppear2()
+                await viewModel.onAppear()
             }
         }
     }
@@ -89,6 +89,7 @@ struct StoryTellingView: View {
         Text(viewModel.storyBody)
             .font(.bodySemiBold)
             .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private var storyHeaderView: some View {

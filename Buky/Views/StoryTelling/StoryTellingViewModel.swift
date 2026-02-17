@@ -20,13 +20,24 @@ final class StoryTellingViewModel: ObservableObject {
     @Published var errorMessage: String?
 
     let isReadOnly: Bool
-    
+
     let streamingChatAPI = StreamingChatAPI()
+
+    // MARK: - Throttle
+    private var chunkBuffer = ""
+    private var flushTask: Task<Void, Never>?
+    private let throttleInterval: UInt64 = 1000_000_000 // 80ms en nanosegundos
 
     private var storyText = "" {
         didSet {
+            let title = Self.titleForStory(storyText)
+            storyTitle = title
+
+            if isLoadingStory && !title.isEmpty {
+                isLoadingStory = false
+            }
+
             storyBody = Self.bodyForStory(from: storyText)
-            storyTitle = Self.titleForStory(storyText)
         }
     }
 
@@ -40,93 +51,51 @@ final class StoryTellingViewModel: ObservableObject {
             self.storyTitle = Self.titleForStory(savedText)
         }
     }
-    
+
     @MainActor
-    func onAppear2() async {
+    func onAppear() async {
+        guard !isReadOnly else { return }
+        isLoadingStory = true
+        storyText = ""
+
         await streamingChatAPI.streamMessage(story) { chunk in
             Task { @MainActor in
-                withAnimation(.linear(duration: 0.1)) {
-                    self.storyText += "\(chunk)"
-                }
+                self.enqueueChunk(chunk)
             }
         } onComplete: {
-            self.finishedReceivingStory = true
+            Task { @MainActor in
+                self.flushBuffer()
+                self.finishedReceivingStory = true
+            }
         } onError: { error in
             print(error)
         }
     }
 
     @MainActor
-    func onAppear() async {
-        guard !isReadOnly else { return }
+    private func enqueueChunk(_ chunk: String) {
+        chunkBuffer += chunk
 
-//        guard let url = URL(string: "https://localhost:3000/api/hello") else { return }
-        guard let url = URL(string: "https://buky-smart-stories.vercel.app/api/hello") else { return }
-        
-        // 1. Configurar la URLRequest
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        // 2. Definir el cuerpo (Body)
-        
-//        
-//        do {
-//            let jsonEncoder = JSONEncoder()
-//            let jsonData = try jsonEncoder.encode(story)
-//            if let jsonString = String(data: jsonData, encoding: .utf8) {
-//                print(jsonString)
-//            }
-//        } catch {
-//            print("Error encoding object: \(error)")
-//        }
-//        let body: [String: Any] = ["characters": "animals",
-//                                   "place": "castlle",
-//                                   "language": "Spanish",
-//                                   "duration": "10  min",
-//                                   "age": "2-4",
-//                                   "lesson": "empathy"]
-//        
-        
-        isLoadingStory = true
-        storyText = ""
-        
-        do {
-            // 3. Usar bytes(for:) para manejar el stream con un POST
-            
-            let jsonEncoder = JSONEncoder()
-            jsonEncoder.outputFormatting = .prettyPrinted
-            let jsonData = try jsonEncoder.encode(story)
-            request.httpBody = jsonData
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print(jsonString)
-            }
-            let (bytes, response) = try await URLSession.shared.bytes(for: request)
-            
-            // Validar respuesta básica
-            guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-                storyText = "Error del servidor."
-                return
-            }
-            
-            // 4. Iterar sobre las líneas a medida que llegan
-            for try await line in bytes.lines {
-                // Aquí puedes limpiar prefijos como "data: " si usas SSE
-                let cleanLine = line.replacingOccurrences(of: "data: ", with: "")
-                
-                if !cleanLine.isEmpty {
-                    withAnimation(.linear(duration: 0.1)) {
-                        storyText += "\(cleanLine)\n\n"
-                    }
-                    isLoadingStory = false
-                    print(cleanLine)
-                }
-            }
-            finishedReceivingStory = false
-        } catch {
-            storyText = "Error de conexión: \(error.localizedDescription)"
+        // Si ya hay un flush programado, no programar otro
+        guard flushTask == nil else { return }
+
+        flushTask = Task { @MainActor in
+            try? await Task.sleep(nanoseconds: self.throttleInterval)
+            self.flushBuffer()
         }
-        finishedReceivingStory = true
+    }
+
+    @MainActor
+    private func flushBuffer() {
+        guard !chunkBuffer.isEmpty else { return }
+        let buffered = chunkBuffer
+        chunkBuffer = ""
+        flushTask?.cancel()
+        flushTask = nil
+
+        withAnimation(.easeIn(duration: 0.15)) {
+            self.storyText += buffered
+        }
     }
 
     func saveStory(context: ModelContext) {
