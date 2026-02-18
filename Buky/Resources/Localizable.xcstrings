@@ -190,7 +190,7 @@
       "comment" : "Title for river"
     },
     "Save story" : {
-      "comment" : "Title for the save story button"
+      "comment" : "Title for the save story"
     },
     "Save Story" : {
       "comment" : "A button label that saves a story.",
@@ -219,7 +219,7 @@
       "comment" : "Title for space"
     },
     "Story saved" : {
-      "comment" : "Title for the saved new stories button"
+      "comment" : "Title for the saved new stories"
     },
     "Story Saved" : {
       "comment" : "A button label that appears when a story is successfully saved.",
