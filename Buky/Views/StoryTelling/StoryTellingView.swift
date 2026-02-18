@@ -10,7 +10,7 @@ struct StoryTellingView: View {
         static let headerSubtitle = String(localized: "What is your story about", comment: "Title for the saved new stories button")
         static let savedStoriesSectionSubtitle = String(localized: "Access your collection of magical tales. Read, share, or continue where you left off in your story adventures", comment: "Subtitle for the saved stories button")
         static let storySavedTitle = String(localized: "Story saved", comment: "Title for the saved new stories button")
-        static let saveStoryTutle = String(localized: "Save story", comment: "Title for the save story")
+        static let saveStoryTutle = String(localized: "Save story", comment: "Title for the save story button")
     }
 
     @StateObject var viewModel: StoryTellingViewModel
