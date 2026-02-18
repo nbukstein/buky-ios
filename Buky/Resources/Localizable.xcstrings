@@ -190,7 +190,7 @@
       "comment" : "Title for river"
     },
     "Save story" : {
-      "comment" : "Title for the save story"
+      "comment" : "Title for the save story button"
     },
     "Save Story" : {
       "comment" : "A button label that saves a story.",
