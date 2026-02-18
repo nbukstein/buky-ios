@@ -1,0 +1,60 @@
+# .github/workflows/pull-from-lokalise.yml
+#
+# Manual: tú lo disparas desde GitHub Actions cuando
+# Lokalise te avisa por email que las traducciones están listas.
+# Descarga las traducciones y las commitea directo a main.
+#
+name: Pull translations from Lokalise
+
+on:
+  workflow_dispatch: # Solo manual desde GitHub Actions UI
+
+env:
+  LOKALISE_API_TOKEN: ${{ secrets.LOKALISE_API_TOKEN }}
+  LOKALISE_PROJECT_ID: ${{ secrets.LOKALISE_PROJECT_ID }}
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install Lokalise CLI
+        run: |
+          curl -sfL https://raw.githubusercontent.com/nicovlb/lokalise-cli-2-go/master/install.sh | sh
+          sudo mv ./bin/lokalise2 /usr/local/bin/lokalise2
+
+      - name: Download translations
+        run: |
+          lokalise2 \
+            --token ${{ env.LOKALISE_API_TOKEN }} \
+            --project-id ${{ env.LOKALISE_PROJECT_ID }} \
+            file download \
+            --format xliff \
+            --original-filenames=true \
+            --directory-prefix="" \
+            --export-empty-as=skip \
+            --export-sort=a_z \
+            --indentation=2sp
+
+      - name: Commit and push to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          # Solo commitea si hay cambios
+          if git diff --staged --quiet; then
+            echo "✅ No hay cambios en las traducciones"
+          else
+            git commit -m "🌍 Update translations from Lokalise"
+            git push origin main
+            echo "✅ Traducciones commiteadas a main"
+          fi
