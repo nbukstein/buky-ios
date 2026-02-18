@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
 
       - name: Push to Lokalise
-        uses: lokalise/lokalise-push-action@v4
+        uses: lokalise/lokalise-push-action@v4.1.0
         with:
           api_token: ${{ env.LOKALISE_API_TOKEN }}
           project_id: ${{ env.LOKALISE_PROJECT_ID }}
