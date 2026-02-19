@@ -25,12 +25,12 @@ struct CreateStoryView: View {
     }
     
     var body: some View {
-        VStack {
-            headerView
-            sectionsView
-        }
-        .navigationTitle(Constants.title)
-        .safeAreaInset(edge: .bottom) {
+        sectionsView
+            .navigationTitle(Constants.title)
+            .safeAreaInset(edge: .top) {
+                headerView
+            }
+            .safeAreaInset(edge: .bottom) {
             VStack {
                 bottomStickyButton
                 Text("Select the configurations to create the story")
@@ -74,15 +74,31 @@ struct CreateStoryView: View {
     }
     
     private var headerView: some View {
-        VStack {
-            Image(systemName: "wand.and.sparkles")
-                .font(.system(size: 35))
-                .foregroundStyle(.white)
-                .padding()
-                .background(headerGradient)
-                .clipShape(.circle)
-            Text(Constants.headerTitle)
-                .font(.h3Bold)
+        VStack(spacing: 0) {
+            VStack {
+                Image(systemName: "wand.and.sparkles")
+                    .font(.system(size: 35))
+                    .foregroundStyle(.white)
+                    .padding()
+                    .background(headerGradient)
+                    .clipShape(.circle)
+                Text(Constants.headerTitle)
+                    .font(.h3Bold)
+                    .padding()
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical)
+            .background(.ultraThinMaterial)
+
+            LinearGradient(
+                stops: [
+                    .init(color: Color(.systemBackground).opacity(0.6), location: 0),
+                    .init(color: Color(.systemBackground).opacity(0), location: 1)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .frame(height: 15)
         }
     }
     
@@ -96,45 +112,69 @@ struct CreateStoryView: View {
     }
 
     private var sectionsView: some View {
-        ScrollView {
-            VStack {
-                AgeSectionView(indexSelected: $viewModel.childAgeIndex)
-                    .padding()
-                StoryLengthSectionView(indexSelected: $viewModel.storyLengthIndex)
-                    .padding()
-                PlaceSectionView(indexSelected: $viewModel.placeIndex)
-                    .padding()
-                ProtagonistsSectionView(indexesSelected: $viewModel.mainCharacterIndexes)
-                    .padding()
-                    .onChange(of: viewModel.mainCharacterIndexes) {
-                        viewModel.onProtagonistsChanged()
+        ScrollViewReader { proxy in
+            ScrollView {
+                VStack {
+                    AgeSectionView(indexSelected: $viewModel.childAgeIndex)
+                        .padding()
+                    StoryLengthSectionView(indexSelected: $viewModel.storyLengthIndex)
+                        .padding()
+                    PlaceSectionView(indexSelected: $viewModel.placeIndex)
+                        .padding()
+                    ProtagonistsSectionView(indexesSelected: $viewModel.mainCharacterIndexes)
+                        .padding()
+                        .onChange(of: viewModel.mainCharacterIndexes) {
+                            viewModel.onProtagonistsChanged()
+                        }
+                    if viewModel.showAnimalSection {
+                        CharacterNameSectionView(
+                            sectionTitle: String(localized: "Name your animal"),
+                            sectionIcon: "pawprint.fill",
+                            subtypes: Story.Characters.animals.subtypes,
+                            indexSelected: $viewModel.animalTypeIndex,
+                            characterName: $viewModel.animalName,
+                            onFocusChanged: { isFocused in
+                                if isFocused {
+                                    withAnimation {
+                                        proxy.scrollTo("animalNameSection", anchor: .top)
+                                    }
+                                }
+                            }
+                        )
+                        .id("animalNameSection")
+                        .padding()
                     }
-                if viewModel.showAnimalSection {
-                    CharacterNameSectionView(
-                        sectionTitle: String(localized: "Name your animal"),
-                        sectionIcon: "pawprint.fill",
-                        subtypes: Story.Characters.animals.subtypes,
-                        indexSelected: $viewModel.animalTypeIndex,
-                        characterName: $viewModel.animalName
-                    )
-                    .padding()
+                    if viewModel.showPeopleSection {
+                        CharacterNameSectionView(
+                            sectionTitle: String(localized: "Name your person"),
+                            sectionIcon: "person.fill",
+                            subtypes: Story.Characters.people.subtypes,
+                            indexSelected: $viewModel.personTypeIndex,
+                            characterName: $viewModel.personName,
+                            onFocusChanged: { isFocused in
+                                if isFocused {
+                                    withAnimation {
+                                        proxy.scrollTo("personNameSection", anchor: .top)
+                                    }
+                                }
+                            }
+                        )
+                        .id("personNameSection")
+                        .padding()
+                    }
+                    LessonsSectionView(indexSelected: $viewModel.lessonIndex)
+                        .padding()
+                    AIProviderSectionView(indexSelected: $viewModel.providerIndex)
+                        .padding()
                 }
-                if viewModel.showPeopleSection {
-                    CharacterNameSectionView(
-                        sectionTitle: String(localized: "Name your person"),
-                        sectionIcon: "person.fill",
-                        subtypes: Story.Characters.people.subtypes,
-                        indexSelected: $viewModel.personTypeIndex,
-                        characterName: $viewModel.personName
-                    )
-                    .padding()
-                }
-                LessonsSectionView(indexSelected: $viewModel.lessonIndex)
-                    .padding()
-                AIProviderSectionView(indexSelected: $viewModel.providerIndex)
-                    .padding()
+                .frame(maxWidth: .infinity)
             }
-            .frame(maxWidth: .infinity)
+            .scrollDismissesKeyboard(.immediately)
+            .simultaneousGesture(
+                TapGesture().onEnded {
+                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                }
+            )
         }
     }
     

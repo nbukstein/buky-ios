@@ -10,7 +10,9 @@ struct CharacterNameSectionView: View {
     let subtypes: [Story.CharacterSubtype]
     @Binding var indexSelected: Int?
     @Binding var characterName: String
+    var onFocusChanged: ((Bool) -> Void)?
 
+    @FocusState private var isFocused: Bool
     @Environment(\.colorScheme) var colorScheme
 
     var buttonTextColor: Color {
@@ -60,6 +62,10 @@ struct CharacterNameSectionView: View {
             String(localized: "Enter the character's name", comment: "Placeholder for character name field"),
             text: $characterName
         )
+        .focused($isFocused)
+        .onChange(of: isFocused) { _, newValue in
+            onFocusChanged?(newValue)
+        }
         .font(.bodyRegular)
         .padding()
         .overlay(
