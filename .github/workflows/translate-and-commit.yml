@@ -1,0 +1,56 @@
+# .github/workflows/translate-and-commit.yml
+#
+# Traduce strings con Claude API y commitea directo a main
+#
+# Trigger: manual desde GitHub Actions UI
+#
+name: Translate with Claude AI
+
+on:
+  workflow_dispatch:
+    inputs:
+      languages:
+        description: "Target languages (comma separated)"
+        required: false
+        default: "es,fr,pt-BR,de,it,ja,ko,zh-Hans"
+
+env:
+  XCSTRINGS_PATH: "Buky/Resources/Localizable.xcstrings"
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run translation script
+        id: translate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TARGET_LANGUAGES: ${{ github.event.inputs.languages }}
+        run: node .github/scripts/translate-xcstrings.mjs
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          if git diff --staged --quiet; then
+            echo "✅ No translation changes"
+          else
+            git commit -m "🌍 Update translations via Claude AI"
+            git push origin main
+            echo "✅ Translations committed to main"
+          fi
