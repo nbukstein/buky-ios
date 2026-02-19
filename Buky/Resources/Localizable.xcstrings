@@ -219,7 +219,7 @@
       "comment" : "Title for space"
     },
     "Story saved" : {
-      "comment" : "Title for the saved new stories"
+      "comment" : "Title for the saved new stories button"
     },
     "Story Saved" : {
       "comment" : "A button label that appears when a story is successfully saved.",
