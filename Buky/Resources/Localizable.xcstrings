@@ -1,4156 +1,4177 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "5 minutes": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5 minutos"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "5 minutes" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 Minuten"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5 minutos"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 minutos"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5 minutes"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 minutes"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5 Minuten"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 minuti"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5 minuti"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5分"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5分"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5분"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5분"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 minutos"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "5分钟"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5分钟"
           }
         }
       }
     },
-    "10 minutes": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10 minutos"
+    "10 minutes" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 Minuten"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10 minutes"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 minutos"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10 minutos"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 minutes"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10 Minuten"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 minuti"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10 minuti"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10分"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10分"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10분"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10분"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 minutos"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "10分钟"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10分钟"
           }
         }
       }
     },
-    "15 minutes": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15 minutos"
+    "15 minutes" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 Minuten"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15 minutes"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 minutos"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15 minutos"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 minutes"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15 Minuten"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 minuti"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15 minuti"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15分"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15分"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15분"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15분"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 minutos"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "15分钟"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15分钟"
           }
         }
       }
     },
-    "Access your collection of magical tales. Read, share, or continue where you left off in your story adventures": {
-      "comment": "Subtitle for the saved stories button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Accede a tu colección de cuentos mágicos. Lee, comparte o continúa donde lo dejaste en tus aventuras de historias"
+    "Access your collection of magical tales. Read, share, or continue where you left off in your story adventures" : {
+      "comment" : "Subtitle for the saved stories button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Greife auf deine Sammlung magischer Geschichten zu. Lese, teile oder setze dort fort, wo du in deinen Geschichtenabenteuern aufgehört hast"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Accédez à votre collection de contes magiques. Lisez, partagez, ou continuez là où vous vous êtes arrêté dans vos aventures"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accede a tu colección de cuentos mágicos. Lee, comparte o continúa donde lo dejaste en tus aventuras de historias"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acesse sua coleção de contos mágicos. Leia, compartilhe ou continue de onde parou em suas aventuras"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accédez à votre collection de contes magiques. Lisez, partagez, ou continuez là où vous vous êtes arrêté dans vos aventures"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Greife auf deine Sammlung magischer Geschichten zu. Lese, teile oder setze dort fort, wo du in deinen Geschichtenabenteuern aufgehört hast"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accedi alla tua collezione di racconti magici. Leggi, condividi o continua da dove hai lasciato le tue avventure"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Accedi alla tua collezione di racconti magici. Leggi, condividi o continua da dove hai lasciato le tue avventure"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "魔法のお話コレクションにアクセスしましょう。読んだり、シェアしたり、続きから物語の冒険を楽しんだりできます"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "魔法のお話コレクションにアクセスしましょう。読んだり、シェアしたり、続きから物語の冒険を楽しんだりできます"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "마법 같은 이야기 모음집에 들어가 보세요. 읽고, 공유하고, 멈췄던 곳부터 이야기 모험을 계속해 보세요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "마법 같은 이야기 모음집에 들어가 보세요. 읽고, 공유하고, 멈췄던 곳부터 이야기 모험을 계속해 보세요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acesse sua coleção de contos mágicos. Leia, compartilhe ou continue de onde parou em suas aventuras"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "访问你的神奇故事收藏。阅读、分享，或从你离开的地方继续你的故事冒险"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "访问你的神奇故事收藏。阅读、分享，或从你离开的地方继续你的故事冒险"
           }
         }
       }
     },
-    "Animals": {
-      "comment": "Title for animals",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Animales"
+    "Animals" : {
+      "comment" : "Title for animals",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiere"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Animaux"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animales"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Animais"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animaux"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tiere"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animali"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Animali"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "どうぶつ"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "どうぶつ"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "동물"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "동물"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animais"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "动物"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动物"
           }
         }
       }
     },
-    "Are you sure you want to delete this story? This action cannot be undone.": {
-      "comment": "A message displayed when a user confirms they want to delete a story.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Estás seguro de que quieres borrar esta historia? Esta acción no se puede deshacer."
+    "Are you sure you want to delete this story? This action cannot be undone." : {
+      "comment" : "A message displayed when a user confirms they want to delete a story.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bist du sicher, dass du diese Geschichte löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Es-tu sûr de vouloir supprimer cette histoire ? Cette action ne peut pas être annulée."
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Estás seguro de que quieres borrar esta historia? Esta acción no se puede deshacer."
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tem certeza que quer apagar esta história? Esta ação não pode ser desfeita."
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es-tu sûr de vouloir supprimer cette histoire ? Cette action ne peut pas être annulée."
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bist du sicher, dass du diese Geschichte löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sei sicuro di voler cancellare questa storia? Questa azione non può essere annullata."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sei sicuro di voler cancellare questa storia? Questa azione non può essere annullata."
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このお話を削除してもよろしいですか？この操作は元に戻すことができません。"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "このお話を削除してもよろしいですか？この操作は元に戻すことができません。"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정말로 이 이야기를 삭제하시겠어요? 삭제하면 되돌릴 수 없어요."
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "정말로 이 이야기를 삭제하시겠어요? 삭제하면 되돌릴 수 없어요."
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tem certeza que quer apagar esta história? Esta ação não pode ser desfeita."
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你确定要删除这个故事吗？此操作无法撤销。"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你确定要删除这个故事吗？此操作无法撤销。"
           }
         }
       }
     },
-    "Aunt": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tía"
+    "Aunt" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tante"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tante"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tía"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tia"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tante"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tante"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おばさん"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おばさん"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이모"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이모"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tia"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "阿姨"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "阿姨"
           }
         }
       }
     },
-    "Brave": {
-      "comment": "Title for the brave",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Valiente"
+    "Brave" : {
+      "comment" : "Title for the brave",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mutig"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Courageux"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valiente"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Corajoso"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Courageux"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mutig"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coraggioso"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Coraggioso"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ゆうかん"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ゆうかん"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "용감한"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "용감한"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corajoso"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "勇敢"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "勇敢"
           }
         }
       }
     },
-    "Brother": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hermano"
+    "Brother" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruder"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Frère"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hermano"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Irmão"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frère"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bruder"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fratello"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fratello"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おにいちゃん・おとうと"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おにいちゃん・おとうと"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "형/동생"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "형/동생"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Irmão"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "哥哥/弟弟"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "哥哥/弟弟"
           }
         }
       }
     },
-    "Buky story maker": {
-      "comment": "The title of the main view.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Creador de historias Buky"
+    "Buky story maker" : {
+      "comment" : "The title of the main view.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buky Geschichten-Ersteller"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Créateur d'histoires Buky"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creador de historias Buky"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Criador de histórias Buky"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créateur d'histoires Buky"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buky Geschichten-Ersteller"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creatore di storie Buky"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Creatore di storie Buky"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buky ストーリーメーカー"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buky ストーリーメーカー"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buky 이야기 만들기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buky 이야기 만들기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criador de histórias Buky"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buky故事制作器"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buky故事制作器"
           }
         }
       }
     },
-    "Butterfly": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mariposa"
+    "Butterfly" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schmetterling"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Papillon"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mariposa"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Borboleta"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Papillon"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Schmetterling"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farfalla"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Farfalla"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ちょうちょ"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ちょうちょ"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "나비"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "나비"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borboleta"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "蝴蝶"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蝴蝶"
           }
         }
       }
     },
-    "Cancel": {
-      "comment": "The label of a button that cancels an action. In this context, it cancels the deletion of a story.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cancelar"
+    "Cancel" : {
+      "comment" : "The label of a button that cancels an action. In this context, it cancels the deletion of a story.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Annuler"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cancelar"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abbrechen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Annulla"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "キャンセル"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "취소"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "取消"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
           }
         }
       }
     },
-    "Castlle": {
-      "comment": "Title for castlle",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Castillo"
+    "Castlle" : {
+      "comment" : "Title for castlle",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schloss"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Château"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Castillo"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Castelo"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Château"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Schloss"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Castello"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Castello"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おしろ"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おしろ"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "성"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "성"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Castelo"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "城堡"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "城堡"
           }
         }
       }
     },
-    "Cat": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gato"
+    "Cat" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katze"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chat"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gato"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gato"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Katze"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gatto"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gatto"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ねこ"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ねこ"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "고양이"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "고양이"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gato"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "猫"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "猫"
           }
         }
       }
     },
-    "Choose your AI": {
-      "comment": "Title for the AI provider section",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elige tu IA"
+    "Choose your AI" : {
+      "comment" : "Title for the AI provider section",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle deine KI"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Choisis ton IA"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige tu IA"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Escolha sua IA"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisis ton IA"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wähle deine KI"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli la tua IA"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scegli la tua IA"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AIを選んでください"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AIを選んでください"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI를 선택해 주세요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AI를 선택해 주세요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha sua IA"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "选择你的AI"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择你的AI"
           }
         }
       }
     },
-    "City": {
-      "comment": "Title for city",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ciudad"
+    "City" : {
+      "comment" : "Title for city",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stadt"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ville"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciudad"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cidade"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ville"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Stadt"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Città"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Città"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まち"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "まち"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도시"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "도시"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cidade"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "城市"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "城市"
           }
         }
       }
     },
-    "Cousin (boy)": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Primo"
+    "Compassion" : {
+      "comment" : "Title for compassion"
+    },
+    "Cousin (boy)" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cousin"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cousin"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primo"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Primo"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cousin"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cousin"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cugino"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cugino"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "いとこ（おとこのこ）"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "いとこ（おとこのこ）"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사촌형/사촌동생"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "사촌형/사촌동생"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primo"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "表哥/表弟"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表哥/表弟"
           }
         }
       }
     },
-    "Cousin (girl)": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prima"
+    "Cousin (girl)" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cousine"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cousine"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prima"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prima"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cousine"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cousine"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cugina"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cugina"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "いとこ（おんなのこ）"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "いとこ（おんなのこ）"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사촌언니/사촌누나"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "사촌언니/사촌누나"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prima"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "表姐/表妹"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表姐/表妹"
           }
         }
       }
     },
-    "Cow": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vaca"
+    "Cow" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuh"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vache"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaca"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vaca"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vache"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kuh"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mucca"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mucca"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "うし"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "うし"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "소"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "소"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaca"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "奶牛"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "奶牛"
           }
         }
       }
     },
-    "Create a story and save it to see it here": {
-      "comment": "A description below the icon in the empty state view, encouraging the user to create a story and save it.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crea una historia y guárdala para verla aquí"
+    "Create a story and save it to see it here" : {
+      "comment" : "A description below the icon in the empty state view, encouraging the user to create a story and save it.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle eine Geschichte und speichere sie, um sie hier zu sehen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crée une histoire et sauvegarde-la pour la voir ici"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una historia y guárdala para verla aquí"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crie uma história e salve para vê-la aqui"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crée une histoire et sauvegarde-la pour la voir ici"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erstelle eine Geschichte und speichere sie, um sie hier zu sehen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una storia e salvala per vederla qui"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crea una storia e salvala per vederla qui"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話を作って保存すると、ここに表示されます"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話を作って保存すると、ここに表示されます"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기를 만들고 저장하면 여기서 볼 수 있어요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기를 만들고 저장하면 여기서 볼 수 있어요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crie uma história e salve para vê-la aqui"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "创建一个故事并保存，就能在这里看到它"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "创建一个故事并保存，就能在这里看到它"
           }
         }
       }
     },
-    "Create new story": {
-      "comment": "Title for the create new story button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crear nueva historia"
+    "Create new story" : {
+      "comment" : "Title for the create new story button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Geschichte erstellen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Créer une nouvelle histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crear nueva historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Criar nova história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer une nouvelle histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Neue Geschichte erstellen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea nuova storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crea nuova storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あたらしいお話を作る"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "あたらしいお話を作る"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새 이야기 만들기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "새 이야기 만들기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criar nova história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "创建新故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "创建新故事"
           }
         }
       }
     },
-    "Create story": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crear historia"
+    "Create story" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschichte erstellen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Créer une histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crear historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Criar história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer une histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geschichte erstellen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crea storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話を作る"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話を作る"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기 만들기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기 만들기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criar história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "创建故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "创建故事"
           }
         }
       }
     },
-    "Creating your story": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Creando tu historia"
+    "Creating your story" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Geschichte wird erstellt"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Création de ton histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creando tu historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Criando sua história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Création de ton histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deine Geschichte wird erstellt"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creando la tua storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Creando la tua storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話を作っています"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話を作っています"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기를 만드는 중이에요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기를 만드는 중이에요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criando sua história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "正在创建你的故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在创建你的故事"
           }
         }
       }
     },
-    "Delete": {
-      "comment": "The text on a destructive button that deletes an item.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Borrar"
+    "Delete" : {
+      "comment" : "The text on a destructive button that deletes an item.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löschen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Supprimer"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apagar"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Löschen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elimina"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "削除"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "삭제"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "삭제"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
           }
         }
       }
     },
-    "Delete story": {
-      "comment": "A button that triggers an alert to delete a story.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Borrar historia"
+    "Delete story" : {
+      "comment" : "A button that triggers an alert to delete a story.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschichte löschen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Supprimer l'histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apagar história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer l'histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geschichte löschen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elimina storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話を削除"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話を削除"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기 삭제"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기 삭제"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除故事"
           }
         }
       }
     },
-    "Dog": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Perro"
+    "Determination" : {
+      "comment" : "Title for determination"
+    },
+    "Dog" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hund"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chien"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perro"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cachorro"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chien"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hund"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cane"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cane"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "いぬ"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "いぬ"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "강아지"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "강아지"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachorro"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "狗"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "狗"
           }
         }
       }
     },
-    "Dragons": {
-      "comment": "Title for dragons",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dragones"
+    "Dragons" : {
+      "comment" : "Title for dragons",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drachen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dragons"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dragones"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dragões"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dragons"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Drachen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Draghi"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Draghi"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドラゴン"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ドラゴン"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "용"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "용"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dragões"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "龙"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "龙"
           }
         }
       }
     },
-    "Elephant": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elefante"
+    "Elephant" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elefant"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Éléphant"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elefante"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elefante"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éléphant"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elefant"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elefante"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elefante"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ぞう"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ぞう"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "코끼리"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "코끼리"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elefante"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "大象"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大象"
           }
         }
       }
     },
-    "Empathy": {
-      "comment": "Title for the empathy",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Empatía"
+    "Empathy" : {
+      "comment" : "Title for the empathy",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitgefühl"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Empathie"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empatía"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Empatia"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empathie"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mitgefühl"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empatia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Empatia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おもいやり"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おもいやり"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "공감"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "공감"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empatia"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "同理心"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同理心"
           }
         }
       }
     },
-    "Enter the character's name": {
-      "comment": "Placeholder for character name field",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Escribe el nombre del personaje"
+    "Enter the character's name" : {
+      "comment" : "Placeholder for character name field",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gib den Namen der Figur ein"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Entre le nom du personnage"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe el nombre del personaje"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Digite o nome do personagem"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entre le nom du personnage"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gib den Namen der Figur ein"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci il nome del personaggio"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Inserisci il nome del personaggio"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャラクターの名前を入力してください"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "キャラクターの名前を入力してください"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "등장인물 이름을 입력해 주세요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "등장인물 이름을 입력해 주세요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digite o nome do personagem"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "输入角色的名字"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入角色的名字"
           }
         }
       }
     },
-    "Friendship": {
-      "comment": "Title for the friendship",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amistad"
+    "Friendship" : {
+      "comment" : "Title for the friendship",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Freundschaft"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amitié"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amistad"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amizade"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amitié"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Freundschaft"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amicizia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amicizia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "友情"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "友情"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "우정"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "우정"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amizade"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "友谊"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "友谊"
           }
         }
       }
     },
-    "Frog": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rana"
+    "Frog" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frosch"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Grenouille"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rana"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sapo"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grenouille"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Frosch"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rana"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rana"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カエル"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "カエル"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "개구리"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "개구리"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sapo"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "青蛙"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "青蛙"
           }
         }
       }
+    },
+    "Generosity" : {
+      "comment" : "Title for generosity"
     },
-    "Grandma": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abuela"
+    "Grandma" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oma"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Grand-mère"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abuela"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vovó"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grand-mère"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Oma"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nonna"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nonna"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おばあちゃん"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おばあちゃん"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "할머니"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "할머니"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vovó"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "奶奶"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "奶奶"
           }
         }
       }
     },
-    "Grandpa": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abuelo"
+    "Grandpa" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opa"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Grand-père"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abuelo"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vovô"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grand-père"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Opa"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nonno"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nonno"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おじいちゃん"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おじいちゃん"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "할아버지"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "할아버지"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vovô"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "爷爷"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "爷爷"
           }
         }
       }
     },
-    "Hi little writer": {
-      "comment": "A greeting displayed in the gradient header view.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hola pequeño escritor"
+    "Hi little writer" : {
+      "comment" : "A greeting displayed in the gradient header view.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hallo kleiner Geschichtenschreiber"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Salut petit écrivain"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hola pequeño escritor"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Oi pequeno escritor"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salut petit écrivain"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hallo kleiner Geschichtenschreiber"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciao piccolo scrittore"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ciao piccolo scrittore"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "こんにちは、小さな物語作家さん"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "こんにちは、小さな物語作家さん"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "안녕, 꼬마 작가야"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "안녕, 꼬마 작가야"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oi pequeno escritor"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你好，小作家"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你好，小作家"
           }
         }
       }
     },
-    "House": {
-      "comment": "Title for house",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Casa"
+    "Hope" : {
+      "comment" : "Title for hope"
+    },
+    "House" : {
+      "comment" : "Title for house",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haus"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Maison"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Casa"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Casa"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maison"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Haus"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Casa"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Casa"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おうち"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おうち"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "집"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "집"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Casa"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "房子"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "房子"
           }
         }
       }
     },
-    "How long do you want your story?": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Qué tan larga quieres tu historia?"
+    "How long do you want your story?" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie lang soll deine Geschichte werden?"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quelle longueur veux-tu pour ton histoire ?"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué tan larga quieres tu historia?"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Que tamanho você quer para sua história?"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle longueur veux-tu pour ton histoire ?"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wie lang soll deine Geschichte werden?"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quanto vuoi che sia lunga la tua storia?"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quanto vuoi che sia lunga la tua storia?"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話はどのくらいの長さがいいかな？"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話はどのくらいの長さがいいかな？"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기를 얼마나 길게 만들고 싶어?"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기를 얼마나 길게 만들고 싶어?"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Que tamanho você quer para sua história?"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你希望故事有多长？"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你希望故事有多长？"
           }
         }
       }
     },
-    "How old are you?": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Cuántos años tienes?"
+    "How old are you?" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie alt bist du?"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quel âge as-tu ?"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Cuántos años tienes?"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quantos anos você tem?"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel âge as-tu ?"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wie alt bist du?"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quanti anni hai?"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quanti anni hai?"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "何歳ですか？"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "何歳ですか？"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "너는 몇 살이야?"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "너는 몇 살이야?"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quantos anos você tem?"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你多大了？"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你多大了？"
           }
         }
       }
     },
-    "If your child liked the story, save it for next time!": {
-      "comment": "A text displayed below the save button, encouraging the user to save their story.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¡Si a tu hijo le gustó la historia, guárdala para la próxima vez!"
+    "If your child liked the story, save it for next time!" : {
+      "comment" : "A text displayed below the save button, encouraging the user to save their story.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wenn deinem Kind die Geschichte gefallen hat, speichere sie für das nächste Mal!"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Si votre enfant a aimé l'histoire, sauvegardez-la pour la prochaine fois !"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Si a tu hijo le gustó la historia, guárdala para la próxima vez!"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Se seu filho gostou da história, salve ela para a próxima vez!"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si votre enfant a aimé l'histoire, sauvegardez-la pour la prochaine fois !"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wenn deinem Kind die Geschichte gefallen hat, speichere sie für das nächste Mal!"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se al tuo bambino è piaciuta la storia, salvala per la prossima volta!"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Se al tuo bambino è piaciuta la storia, salvala per la prossima volta!"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お子様がお話を気に入ったら、次回のために保存しましょう！"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お子様がお話を気に入ったら、次回のために保存しましょう！"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아이가 이야기를 좋아했다면, 다음에 또 볼 수 있게 저장해 보세요!"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "아이가 이야기를 좋아했다면, 다음에 또 볼 수 있게 저장해 보세요!"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se seu filho gostou da história, salve ela para a próxima vez!"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "如果您的孩子喜欢这个故事，请保存它以备下次使用！"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果您的孩子喜欢这个故事，请保存它以备下次使用！"
           }
         }
       }
+    },
+    "Joy" : {
+      "comment" : "Title for joy"
     },
-    "Kings": {
-      "comment": "Title for kings",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reyes"
+    "Kings" : {
+      "comment" : "Title for kings",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Könige"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rois"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reyes"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reis"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rois"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Könige"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Re"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Re"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "王様"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "王様"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "왕들"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "왕들"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reis"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "国王"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "国王"
           }
         }
       }
     },
-    "Lets create a new story": {
-      "comment": "Subtitle for the create new story button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vamos a crear una nueva historia"
+    "Lets create a new story" : {
+      "comment" : "Subtitle for the create new story button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lass uns eine neue Geschichte erstellen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Créons une nouvelle histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vamos a crear una nueva historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vamos criar uma nova história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créons une nouvelle histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lass uns eine neue Geschichte erstellen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creiamo una nuova storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Creiamo una nuova storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいお話を作りましょう"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新しいお話を作りましょう"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새로운 이야기를 만들어보자"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "새로운 이야기를 만들어보자"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vamos criar uma nova história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "让我们创作一个新故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "让我们创作一个新故事"
           }
         }
       }
     },
-    "Lion": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "León"
+    "Lion" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löwe"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lion"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "León"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Leão"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lion"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Löwe"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leone"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Leone"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライオン"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ライオン"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사자"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "사자"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leão"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "狮子"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "狮子"
           }
         }
       }
     },
-    "Long": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Larga"
+    "Long" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lang"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Longue"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Larga"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Longa"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longue"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lang"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lunga"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lunga"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "長い"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "長い"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "길게"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "길게"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longa"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "长"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "长"
           }
         }
       }
     },
-    "Love": {
-      "comment": "Title for the love",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amor"
+    "Love" : {
+      "comment" : "Title for the love",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liebe"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amour"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amor"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amor"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amour"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Liebe"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amore"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Amore"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "愛"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "愛"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사랑"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "사랑"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amor"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "爱"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "爱"
           }
         }
       }
     },
-    "Make great stories using AI": {
-      "comment": "A description of the functionality of the app.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crea historias increíbles usando IA"
+    "Make great stories using AI" : {
+      "comment" : "A description of the functionality of the app.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle tolle Geschichten mit KI"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Créer de belles histoires avec l'IA"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea historias increíbles usando IA"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crie histórias incríveis usando IA"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer de belles histoires avec l'IA"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erstelle tolle Geschichten mit KI"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea storie fantastiche usando l'IA"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Crea storie fantastiche usando l'IA"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AIを使って素敵なお話を作ろう"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AIを使って素敵なお話を作ろう"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI로 멋진 이야기 만들기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AI로 멋진 이야기 만들기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crie histórias incríveis usando IA"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "使用AI创作精彩故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用AI创作精彩故事"
           }
         }
       }
     },
-    "Medium": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mediana"
+    "Medium" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mittel"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Moyenne"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mediana"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Média"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moyenne"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mittel"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Media"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Media"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "普通"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "普通"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "보통"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "보통"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Média"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中等"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中等"
           }
         }
       }
     },
-    "Mountain": {
-      "comment": "Title for mountain",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Montaña"
+    "Mountain" : {
+      "comment" : "Title for mountain",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berg"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Montagne"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montaña"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Montanha"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montagne"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Berg"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montagna"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Montagna"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "山"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "山"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "산"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "산"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montanha"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "山"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "山"
           }
         }
       }
     },
-    "Name your animal": {
-      "comment": "Title of a section in the \"Create story\" view where the user can name an animal character.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nombra tu animal"
+    "Name your animal" : {
+      "comment" : "Title of a section in the \"Create story\" view where the user can name an animal character.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benenne dein Tier"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nomme ton animal"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombra tu animal"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dê um nome ao seu animal"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nomme ton animal"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Benenne dein Tier"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dai un nome al tuo animale"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dai un nome al tuo animale"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動物の名前をつけてね"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "動物の名前をつけてね"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "동물의 이름을 지어줘"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "동물의 이름을 지어줘"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dê um nome ao seu animal"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "给你的动物起个名字"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "给你的动物起个名字"
           }
         }
       }
     },
-    "Name your person": {
-      "comment": "Title of a section in the \"Create story\" view where they can choose a name for a character.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nombra tu persona"
+    "Name your person" : {
+      "comment" : "Title of a section in the \"Create story\" view where they can choose a name for a character.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benenne deine Person"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nomme ta personne"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombra tu persona"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dê um nome à sua pessoa"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nomme ta personne"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Benenne deine Person"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dai un nome alla tua persona"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dai un nome alla tua persona"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人の名前をつけてね"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "人の名前をつけてね"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사람의 이름을 지어줘"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "사람의 이름을 지어줘"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dê um nome à sua pessoa"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "给你的人物起个名字"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "给你的人物起个名字"
           }
         }
       }
     },
-    "No saved stories yet": {
-      "comment": "A message displayed when a user has not saved any stories.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aún no hay historias guardadas"
+    "No saved stories yet" : {
+      "comment" : "A message displayed when a user has not saved any stories.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch keine gespeicherten Geschichten"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aucune histoire sauvegardée pour l'instant"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aún no hay historias guardadas"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ainda não há histórias salvas"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune histoire sauvegardée pour l'instant"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Noch keine gespeicherten Geschichten"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna storia salvata ancora"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nessuna storia salvata ancora"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まだ保存されたお話はありません"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "まだ保存されたお話はありません"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아직 저장된 이야기가 없어요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "아직 저장된 이야기가 없어요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ainda não há histórias salvas"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "还没有保存的故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有保存的故事"
           }
         }
       }
     },
-    "People": {
-      "comment": "Title for people",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Personas"
+    "Patience" : {
+      "comment" : "Title for patience"
+    },
+    "People" : {
+      "comment" : "Title for people",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menschen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Personnes"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personas"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pessoas"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personnes"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Menschen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Persone"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Persone"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人々"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "人々"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사람들"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "사람들"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pessoas"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "人物"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人物"
           }
         }
       }
+    },
+    "Perseverance" : {
+      "comment" : "Title for perseverance"
     },
-    "Person": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Persona"
+    "Person" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Person"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Personne"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Persona"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pessoa"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personne"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Person"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Persona"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Persona"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "人"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사람"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "사람"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pessoa"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "人"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人"
           }
         }
       }
     },
-    "Princess": {
-      "comment": "Title for princess",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Princesa"
+    "Princess" : {
+      "comment" : "Title for princess",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prinzessin"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Princesse"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Princesa"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Princesa"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Princesse"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prinzessin"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Principessa"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Principessa"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お姫様"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お姫様"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "공주"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "공주"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Princesa"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "公主"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公主"
           }
         }
       }
     },
-    "Quiteness": {
-      "comment": "Title for the quiteness",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tranquilidad"
+    "Quiteness" : {
+      "comment" : "Title for the quiteness",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruhe"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tranquillité"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tranquilidad"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tranquilidade"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tranquillité"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ruhe"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tranquillità"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tranquillità"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "静けさ"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "静けさ"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "조용함"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "조용함"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tranquilidade"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "宁静"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宁静"
           }
         }
       }
     },
-    "Respect": {
-      "comment": "Title for the respect",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Respeto"
+    "Respect" : {
+      "comment" : "Title for the respect",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respekt"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Respect"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respeto"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Respeito"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respect"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Respekt"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rispetto"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rispetto"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "思いやり"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "思いやり"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "존중"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "존중"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respeito"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "尊重"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尊重"
           }
         }
       }
     },
-    "River": {
-      "comment": "Title for river",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Río"
+    "River" : {
+      "comment" : "Title for river",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fluss"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rivière"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Río"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rio"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rivière"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fluss"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiume"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fiume"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "川"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "川"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "강"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "강"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rio"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "河"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "河"
           }
         }
       }
     },
-    "Save story": {
-      "comment": "Title for the save story button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Guardar historia"
+    "Save story" : {
+      "comment" : "Title for the save story button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschichte speichern"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sauvegarder l'histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Salvar história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarder l'histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geschichte speichern"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Salva storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話を保存"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話を保存"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기 저장하기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기 저장하기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保存故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存故事"
           }
         }
       }
     },
-    "Save Story": {
-      "comment": "A button label that saves a story.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Guardar Historia"
+    "Save Story" : {
+      "comment" : "A button label that saves a story.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschichte Speichern"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sauvegarder l'Histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar Historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Salvar História"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarder l'Histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geschichte Speichern"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva Storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Salva Storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話を保存"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話を保存"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기 저장하기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기 저장하기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar História"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保存故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存故事"
           }
         }
       }
     },
-    "Saved stories": {
-      "comment": "Title for the saved new stories button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Historias guardadas"
+    "Saved stories" : {
+      "comment" : "Title for the saved new stories button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gespeicherte Geschichten"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Histoires sauvegardées"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historias guardadas"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Histórias salvas"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Histoires sauvegardées"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gespeicherte Geschichten"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Storie salvate"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Storie salvate"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存されたお話"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保存されたお話"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저장된 이야기들"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "저장된 이야기들"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Histórias salvas"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "已保存的故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已保存的故事"
           }
         }
       }
     },
-    "Sea": {
-      "comment": "Title for sea",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mar"
+    "Sea" : {
+      "comment" : "Title for sea",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meer"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mer"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mar"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mar"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mer"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Meer"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mare"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mare"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "海"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "海"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "바다"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "바다"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mar"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "海"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "海"
           }
         }
       }
     },
-    "Select the configurations to create the story": {
-      "comment": "A description below the button that allows the user to select the configurations to create a story.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Selecciona las configuraciones para crear la historia"
+    "Select the configurations to create the story" : {
+      "comment" : "A description below the button that allows the user to select the configurations to create a story.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle die Einstellungen, um die Geschichte zu erstellen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sélectionne les configurations pour créer l'histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona las configuraciones para crear la historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Selecione as configurações para criar a história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionne les configurations pour créer l'histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wähle die Einstellungen, um die Geschichte zu erstellen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona le configurazioni per creare la storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Seleziona le configurazioni per creare la storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ストーリーを作るための設定を選んでください"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ストーリーを作るための設定を選んでください"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기를 만들기 위한 설정을 선택하세요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기를 만들기 위한 설정을 선택하세요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecione as configurações para criar a história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "选择配置来创建故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择配置来创建故事"
           }
         }
       }
     },
-    "Sharing": {
-      "comment": "Title for the sharing",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Compartir"
+    "Sharing" : {
+      "comment" : "Title for the sharing",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teilen"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Partage"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartir"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Compartilhamento"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partage"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Teilen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condivisione"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Condivisione"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "シェア"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "シェア"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "나누기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "나누기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhamento"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
           }
         }
       }
     },
-    "Short": {
-      "comment": "Title for the screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Corto"
+    "Short" : {
+      "comment" : "Title for the screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurz"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Court"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corto"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Curta"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Court"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kurz"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corto"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Corto"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "短い"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "短い"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "짧은"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "짧은"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curta"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "短篇"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "短篇"
           }
         }
       }
     },
-    "Sister": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hermana"
+    "Sister" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schwester"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sœur"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hermana"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Irmã"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sœur"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Schwester"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorella"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sorella"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お姉ちゃん"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お姉ちゃん"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "언니/누나"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "언니/누나"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Irmã"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "姐姐"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "姐姐"
           }
         }
       }
     },
-    "Space": {
-      "comment": "Title for space",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Espacio"
+    "Space" : {
+      "comment" : "Title for space",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weltraum"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Espace"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Espacio"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Espaço"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Espace"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Weltraum"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spazio"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Spazio"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宇宙"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "宇宙"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "우주"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "우주"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Espaço"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "太空"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "太空"
           }
         }
       }
     },
-    "Story saved": {
-      "comment": "Title for the saved new stories button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Historia guardada"
+    "Story saved" : {
+      "comment" : "Title for the saved new stories button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschichte gespeichert"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Histoire sauvegardée"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historia guardada"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "História salva"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Histoire sauvegardée"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geschichte gespeichert"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Storia salvata"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Storia salvata"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ストーリーが保存されました"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ストーリーが保存されました"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기가 저장되었어요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기가 저장되었어요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "História salva"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "故事已保存"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "故事已保存"
           }
         }
       }
     },
-    "Story Saved": {
-      "comment": "A button label that appears when a story is successfully saved.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Historia Guardada"
+    "Story Saved" : {
+      "comment" : "A button label that appears when a story is successfully saved.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschichte Gespeichert"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Histoire Sauvegardée"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historia Guardada"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "História Salva"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Histoire Sauvegardée"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geschichte Gespeichert"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Storia Salvata"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Storia Salvata"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ストーリーが保存されました"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ストーリーが保存されました"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기 저장됨"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기 저장됨"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "História Salva"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "故事已保存"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "故事已保存"
           }
         }
       }
     },
-    "Superheroes": {
-      "comment": "Title for superhero",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Superhéroes"
+    "Superheroes" : {
+      "comment" : "Title for superhero",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superhelden"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Super-héros"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superhéroes"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Super-heróis"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Super-héros"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Superhelden"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supereroi"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Supereroi"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スーパーヒーロー"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "スーパーヒーロー"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "슈퍼히어로"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "슈퍼히어로"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Super-heróis"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "超级英雄"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "超级英雄"
           }
         }
       }
     },
-    "This can take some seconds...": {
-      "comment": "Loading text while fetching story",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Esto puede tomar algunos segundos..."
+    "This can take some seconds..." : {
+      "comment" : "Loading text while fetching story",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das kann ein paar Sekunden dauern..."
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cela peut prendre quelques secondes..."
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esto puede tomar algunos segundos..."
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Isso pode levar alguns segundos..."
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cela peut prendre quelques secondes..."
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Das kann ein paar Sekunden dauern..."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo può richiedere alcuni secondi..."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Questo può richiedere alcuni secondi..."
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "少しお待ちください..."
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "少しお待ちください..."
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "몇 초 정도 걸릴 수 있어요..."
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "몇 초 정도 걸릴 수 있어요..."
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isso pode levar alguns segundos..."
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "这可能需要几秒钟..."
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这可能需要几秒钟..."
           }
         }
       }
     },
-    "Uncle": {
-      "comment": "Character subtype",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tío"
+    "Uncle" : {
+      "comment" : "Character subtype",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onkel"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Oncle"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tío"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tio"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oncle"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Onkel"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zio"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zio"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おじさん"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "おじさん"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "삼촌"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "삼촌"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tio"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "叔叔"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "叔叔"
           }
         }
       }
     },
-    "Use the magic of IA to create amazing stories. Set the characters, place and life lessons for your story": {
-      "comment": "Subtitle for the create new story button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usa la magia de la IA para crear historias increíbles. Configura los personajes, el lugar y las lecciones de vida para tu historia"
+    "Use the magic of IA to create amazing stories. Set the characters, place and life lessons for your story" : {
+      "comment" : "Subtitle for the create new story button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutze die Magie der KI, um wunderbare Geschichten zu erschaffen. Bestimme die Charaktere, den Ort und die Lebenslektionen für deine Geschichte"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Utilise la magie de l'IA pour créer des histoires extraordinaires. Choisis les personnages, le lieu et les leçons de vie pour ton histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la magia de la IA para crear historias increíbles. Configura los personajes, el lugar y las lecciones de vida para tu historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Use a magia da IA para criar histórias incríveis. Escolha os personagens, o lugar e as lições de vida para sua história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilise la magie de l'IA pour créer des histoires extraordinaires. Choisis les personnages, le lieu et les leçons de vie pour ton histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nutze die Magie der KI, um wunderbare Geschichten zu erschaffen. Bestimme die Charaktere, den Ort und die Lebenslektionen für deine Geschichte"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la magia dell'IA per creare storie fantastiche. Scegli i personaggi, il luogo e le lezioni di vita per la tua storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usa la magia dell'IA per creare storie fantastiche. Scegli i personaggi, il luogo e le lezioni di vita per la tua storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AIの魔法を使って素晴らしいストーリーを作りましょう。登場人物、場所、そしてお話の教訓を設定してください"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AIの魔法を使って素晴らしいストーリーを作りましょう。登場人物、場所、そしてお話の教訓を設定してください"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI의 마법을 사용해서 멋진 이야기를 만들어보세요. 이야기의 등장인물, 장소, 그리고 교훈을 설정해주세요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AI의 마법을 사용해서 멋진 이야기를 만들어보세요. 이야기의 등장인물, 장소, 그리고 교훈을 설정해주세요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use a magia da IA para criar histórias incríveis. Escolha os personagens, o lugar e as lições de vida para sua história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "使用人工智能的魔力创造精彩的故事。为你的故事设置角色、地点和人生道理"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用人工智能的魔力创造精彩的故事。为你的故事设置角色、地点和人生道理"
           }
         }
       }
     },
-    "What is the lesson of the story?": {
-      "comment": "Title for the lesson section",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Cuál es la enseñanza de la historia?"
+    "What is the lesson of the story?" : {
+      "comment" : "Title for the lesson section",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Was ist die Moral der Geschichte?"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quelle est la leçon de l'histoire ?"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Cuál es la enseñanza de la historia?"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Qual é a lição da história?"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle est la leçon de l'histoire ?"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Was ist die Moral der Geschichte?"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qual è la morale della storia?"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Qual è la morale della storia?"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このお話の教訓は何ですか？"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "このお話の教訓は何ですか？"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기의 교훈은 무엇인가요?"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기의 교훈은 무엇인가요?"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qual é a lição da história?"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "这个故事的寓意是什么？"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这个故事的寓意是什么？"
           }
         }
       }
     },
-    "What is your story about": {
-      "comment": "Title for the saved new stories button",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿De qué trata tu historia?"
+    "What is your story about" : {
+      "comment" : "Title for the saved new stories button",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wovon handelt deine Geschichte"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "De quoi parle ton histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿De qué trata tu historia?"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sobre o que é sua história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De quoi parle ton histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wovon handelt deine Geschichte"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di cosa parla la tua storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Di cosa parla la tua storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "どんなお話にしますか"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "どんなお話にしますか"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "어떤 이야기를 만들고 싶나요"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "어떤 이야기를 만들고 싶나요"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre o que é sua história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你的故事是关于什么的"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的故事是关于什么的"
           }
         }
       }
     },
-    "What would you like to do today?": {
-      "comment": "A description below the header that explains the options available to the user.",
-      "isCommentAutoGenerated": true,
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Qué te gustaría hacer hoy?"
+    "What would you like to do today?" : {
+      "comment" : "A description below the header that explains the options available to the user.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Was möchtest du heute machen?"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Qu'aimerais-tu faire aujourd'hui ?"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué te gustaría hacer hoy?"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "O que você gostaria de fazer hoje?"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qu'aimerais-tu faire aujourd'hui ?"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Was möchtest du heute machen?"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa vorresti fare oggi?"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cosa vorresti fare oggi?"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日は何をしたいですか？"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日は何をしたいですか？"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘은 무엇을 하고 싶나요?"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "오늘은 무엇을 하고 싶나요?"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que você gostaria de fazer hoje?"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今天你想做什么？"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天你想做什么？"
           }
         }
       }
     },
-    "Where do you want your story to happen?": {
-      "comment": "Title for the place section",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Dónde quieres que suceda tu historia?"
+    "Where do you want your story to happen?" : {
+      "comment" : "Title for the place section",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wo soll deine Geschichte stattfinden?"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Où veux-tu que ton histoire se déroule ?"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Dónde quieres que suceda tu historia?"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Onde você quer que sua história aconteça?"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Où veux-tu que ton histoire se déroule ?"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wo soll deine Geschichte stattfinden?"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dove vuoi che si svolga la tua storia?"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dove vuoi che si svolga la tua storia?"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話の舞台はどこにしますか？"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話の舞台はどこにしますか？"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기가 어디에서 일어났으면 좋겠나요?"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기가 어디에서 일어났으면 좋겠나요?"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onde você quer que sua história aconteça?"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你希望故事发生在哪里？"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你希望故事发生在哪里？"
           }
         }
       }
     },
-    "Who do you want to be the main characters in the story?": {
-      "comment": "Title for the place section",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Quién quieres que sean los personajes principales de la historia?"
+    "Who do you want to be the main characters in the story?" : {
+      "comment" : "Title for the place section",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wer sollen die Hauptfiguren in der Geschichte sein?"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Qui veux-tu comme personnages principaux dans l'histoire ?"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Quién quieres que sean los personajes principales de la historia?"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quem você quer que sejam os personagens principais da história?"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qui veux-tu comme personnages principaux dans l'histoire ?"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wer sollen die Hauptfiguren in der Geschichte sein?"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chi vuoi che siano i personaggi principali della storia?"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chi vuoi che siano i personaggi principali della storia?"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お話の主人公は誰にしますか？"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "お話の主人公は誰にしますか？"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이야기의 주인공을 누구로 하고 싶나요?"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이야기의 주인공을 누구로 하고 싶나요?"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quem você quer que sejam os personagens principais da história?"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你希望故事的主角是谁？"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你希望故事的主角是谁？"
           }
         }
       }
     },
-    "Woods": {
-      "comment": "Title for woods",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bosque"
+    "Woods" : {
+      "comment" : "Title for woods",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wald"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bois"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bosque"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Floresta"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bois"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wald"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bosco"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bosco"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "森"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "森"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "숲"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "숲"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Floresta"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "森林"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "森林"
           }
         }
       }
     },
-    "Your story": {
-      "comment": "Title for read-only story screen",
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tu historia"
+    "Your story" : {
+      "comment" : "Title for read-only story screen",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Geschichte"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ton histoire"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu historia"
           }
         },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sua história"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton histoire"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deine Geschichte"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua storia"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "La tua storia"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたのお話"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "あなたのお話"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "당신의 이야기"
           }
         },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "당신의 이야기"
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua história"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你的故事"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的故事"
           }
         }
       }
     }
   },
-  "version": "1.1"
+  "version" : "1.1"
 }

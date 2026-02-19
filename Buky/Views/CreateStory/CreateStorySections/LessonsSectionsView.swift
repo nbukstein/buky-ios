@@ -74,7 +74,7 @@ struct LessonsSectionView: View {
                     .foregroundStyle(Constants.color)
                     .padding()
             }
-            .padding()
+            .padding(.horizontal)
             .frame(maxWidth: .infinity)
             .background(
                 RoundedRectangle(cornerRadius: 10)
@@ -110,6 +110,13 @@ extension Story.Lesson {
         case .sharing: String(localized: "Sharing", comment: "Title for the sharing")
         case .brave: String(localized: "Brave", comment: "Title for the brave")
         case .quiteness: String(localized: "Quiteness", comment: "Title for the quiteness")
+        case .perseverance: String(localized: "Perseverance", comment: "Title for perseverance")
+        case .compassion: String(localized: "Compassion", comment: "Title for compassion")
+        case .hope: String(localized: "Hope", comment: "Title for hope")
+        case .determination: String(localized: "Determination", comment: "Title for determination")
+        case .patience: String(localized: "Patience", comment: "Title for patience")
+        case .generosity: String(localized: "Generosity", comment: "Title for generosity")
+        case .joy: String(localized: "Joy", comment: "Title for joy")
         }
     }
 
@@ -122,6 +129,13 @@ extension Story.Lesson {
         case .sharing: Image(.sharing)
         case .brave: Image(.brave)
         case .quiteness: Image(.quiteness)
+        case .perseverance: Image(systemName: "figure.walk")
+        case .compassion: Image(systemName: "hands.and.sparkles")
+        case .hope: Image(systemName: "sun.horizon.fill")
+        case .determination: Image(systemName: "target")
+        case .patience: Image(systemName: "hourglass")
+        case .generosity: Image(systemName: "gift.fill")
+        case .joy: Image(systemName: "face.smiling.fill")
         }
     }
 }

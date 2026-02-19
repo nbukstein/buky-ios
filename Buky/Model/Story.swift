@@ -94,6 +94,13 @@ final class Story: Codable {
         case sharing
         case brave
         case quiteness
+        case perseverance
+        case compassion
+        case hope
+        case determination
+        case patience
+        case generosity
+        case joy
     }
 
     enum AIProvider: String, Codable, CaseIterable {
