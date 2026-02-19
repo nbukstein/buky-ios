@@ -39,7 +39,6 @@ jobs:
             --detect-icu-plurals \
             --use-automations=true \
             --poll \
-            --poll-timeout 600s
 
       - name: Verify upload
         run: echo "✅ xcstrings uploaded to Lokalise"
