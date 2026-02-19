@@ -121,7 +121,7 @@ struct CreateStoryView: View {
                             onFocusChanged: { isFocused in
                                 if isFocused {
                                     withAnimation {
-                                        proxy.scrollTo("animalNameSection", anchor: .top)
+                                        proxy.scrollTo("animalNameSection", anchor: .center)
                                     }
                                 }
                             }
@@ -139,7 +139,7 @@ struct CreateStoryView: View {
                             onFocusChanged: { isFocused in
                                 if isFocused {
                                     withAnimation {
-                                        proxy.scrollTo("personNameSection", anchor: .top)
+                                        proxy.scrollTo("personNameSection", anchor: .center)
                                     }
                                 }
                             }

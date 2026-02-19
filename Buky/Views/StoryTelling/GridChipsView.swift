@@ -49,6 +49,7 @@ struct GridChipsView: View {
         .padding(8)
         .background(color.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 20))
+        .frame(maxWidth: 200)
     }
 }
 

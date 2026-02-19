@@ -22,12 +22,10 @@ struct CharacterNameSectionView: View {
     var body: some View {
         VStack(alignment: .leading) {
             title
-                .padding(.bottom)
             options
             if indexSelected != nil {
                 nameField
                     .padding(.horizontal)
-                    .padding(.top, 8)
             }
         }
     }
@@ -52,6 +50,7 @@ struct CharacterNameSectionView: View {
                 ForEach(Array(subtypes.enumerated()), id: \.offset) { index, option in
                     makeOptionItem(item: option, index: index)
                 }
+                .padding(.vertical)
             }
             .padding(.horizontal)
         }
@@ -64,7 +63,9 @@ struct CharacterNameSectionView: View {
         )
         .focused($isFocused)
         .onChange(of: isFocused) { _, newValue in
-            onFocusChanged?(newValue)
+            Task { @MainActor in
+                onFocusChanged?(newValue)
+            }
         }
         .font(.bodyRegular)
         .padding()
