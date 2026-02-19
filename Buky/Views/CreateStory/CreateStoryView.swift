@@ -17,7 +17,7 @@ struct CreateStoryView: View {
     }
 
     @StateObject var viewModel: CreateStoryViewModel
-    
+
     @Environment(\.router) var router
     
     init(viewModel: CreateStoryViewModel) {
@@ -27,9 +27,6 @@ struct CreateStoryView: View {
     var body: some View {
         sectionsView
             .navigationTitle(Constants.title)
-            .safeAreaInset(edge: .top) {
-                headerView
-            }
             .safeAreaInset(edge: .bottom) {
             VStack {
                 bottomStickyButton
@@ -74,32 +71,19 @@ struct CreateStoryView: View {
     }
     
     private var headerView: some View {
-        VStack(spacing: 0) {
-            VStack {
-                Image(systemName: "wand.and.sparkles")
-                    .font(.system(size: 35))
-                    .foregroundStyle(.white)
-                    .padding()
-                    .background(headerGradient)
-                    .clipShape(.circle)
-                Text(Constants.headerTitle)
-                    .font(.h3Bold)
-                    .padding()
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical)
-            .background(.ultraThinMaterial)
-
-            LinearGradient(
-                stops: [
-                    .init(color: Color(.systemBackground).opacity(0.6), location: 0),
-                    .init(color: Color(.systemBackground).opacity(0), location: 1)
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .frame(height: 15)
+        VStack {
+            Image(systemName: "wand.and.sparkles")
+                .font(.system(size: 35))
+                .foregroundStyle(.white)
+                .padding()
+                .background(headerGradient)
+                .clipShape(.circle)
+            Text(Constants.headerTitle)
+                .font(.h3Bold)
+                .padding()
         }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical)
     }
     
     
@@ -115,6 +99,7 @@ struct CreateStoryView: View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack {
+                    headerView
                     AgeSectionView(indexSelected: $viewModel.childAgeIndex)
                         .padding()
                     StoryLengthSectionView(indexSelected: $viewModel.storyLengthIndex)
