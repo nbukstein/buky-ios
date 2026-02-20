@@ -18,8 +18,24 @@ final class StoryTellingViewModel: ObservableObject {
     @Published var finishedReceivingStory = false
     @Published var isSaved = false
     @Published var errorMessage: String?
+    @Published var showReadingTips = false
+    @Published var isFirstTimeTips = true
 
     let isReadOnly: Bool
+
+    // MARK: - Reading Tips (UserDefaults)
+    private static let hasSeenReadingTipsKey = "hasSeenReadingTips"
+    private static let storiesReadCountKey = "storiesReadCount"
+
+    private var hasSeenReadingTips: Bool {
+        get { UserDefaults.standard.bool(forKey: Self.hasSeenReadingTipsKey) }
+        set { UserDefaults.standard.set(newValue, forKey: Self.hasSeenReadingTipsKey) }
+    }
+
+    private var storiesReadCount: Int {
+        get { UserDefaults.standard.integer(forKey: Self.storiesReadCountKey) }
+        set { UserDefaults.standard.set(newValue, forKey: Self.storiesReadCountKey) }
+    }
 
     let streamingChatAPI = StreamingChatAPI()
 
@@ -95,6 +111,27 @@ final class StoryTellingViewModel: ObservableObject {
 
         withAnimation(.easeIn(duration: 0.15)) {
             self.storyText += buffered
+        }
+    }
+
+    func checkReadingTips() {
+        guard !isReadOnly else { return }
+        if !hasSeenReadingTips {
+            isFirstTimeTips = true
+            showReadingTips = true
+        } else {
+            storiesReadCount += 1
+            if storiesReadCount >= 20 {
+                isFirstTimeTips = false
+                showReadingTips = true
+                storiesReadCount = 0
+            }
+        }
+    }
+
+    func onReadingTipsDismissed() {
+        if isFirstTimeTips {
+            hasSeenReadingTips = true
         }
     }
 

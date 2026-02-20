@@ -51,9 +51,15 @@ struct StoryTellingView: View {
         }
         .edgesIgnoringSafeArea(.bottom)
         .onAppear {
+            viewModel.checkReadingTips()
             Task {
                 await viewModel.onAppear()
             }
+        }
+        .sheet(isPresented: $viewModel.showReadingTips) {
+            viewModel.onReadingTipsDismissed()
+        } content: {
+            ReadingTipsSheet(isFirstTime: viewModel.isFirstTimeTips)
         }
     }
 
