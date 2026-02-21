@@ -20,7 +20,10 @@ struct CreateStoryView: View {
 
     @Environment(\.router) var router
     @Environment(\.colorScheme) var colorScheme
-    
+
+    @State private var showLimitReachedAlert = false
+    @State private var showSubscriptionView = false
+
     init(viewModel: CreateStoryViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
@@ -48,6 +51,11 @@ struct CreateStoryView: View {
 
     private var bottomStickyButton: some View {
         Button(action: {
+            guard viewModel.canCreateStory else {
+                showLimitReachedAlert = true
+                return
+            }
+            viewModel.recordStoryCreation()
             router.showScreen(.push) { _ in
                 StoryTellingView(viewModel: .init(story: viewModel.createStory()))
                     .modelContainer(BukyApp.sharedModelContainer)
@@ -68,6 +76,20 @@ struct CreateStoryView: View {
                     )
                 )
                 .cornerRadius(15)
+        }
+        .alert(
+            String(localized: "Story limit reached"),
+            isPresented: $showLimitReachedAlert
+        ) {
+            Button(String(localized: "Subscribe")) {
+                showSubscriptionView = true
+            }
+            Button(String(localized: "OK"), role: .cancel) {}
+        } message: {
+            Text("You've used all your free stories. Subscribe to create more!")
+        }
+        .sheet(isPresented: $showSubscriptionView) {
+            SubscriptionView()
         }
     }
     

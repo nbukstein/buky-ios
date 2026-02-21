@@ -21,6 +21,13 @@ final class CreateStoryViewModel: ObservableObject {
     @Published var personTypeIndex: Int?
     @Published var personName: String = ""
 
+    private let storyLimitManager = StoryLimitManager.shared
+
+    var canCreateStory: Bool { storyLimitManager.canCreateStory }
+    var storiesRemaining: Int { storyLimitManager.storiesRemaining }
+
+    func recordStoryCreation() { storyLimitManager.recordStoryCreation() }
+
     var isCreateStoryEnabled: Bool {
         return childAgeIndex != nil &&
         storyLengthIndex != nil &&

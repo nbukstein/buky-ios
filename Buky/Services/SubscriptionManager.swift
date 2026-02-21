@@ -121,6 +121,7 @@ final class SubscriptionManager: ObservableObject {
     // MARK: - Update Purchased Products
 
     func updatePurchasedProducts() async {
+        let previousTier = currentSubscriptionTier
         var purchased: Set<String> = []
 
         for await result in StoreKit.Transaction.currentEntitlements {
@@ -130,6 +131,11 @@ final class SubscriptionManager: ObservableObject {
         }
 
         purchasedProductIDs = purchased
+
+        let newTier = currentSubscriptionTier
+        if newTier != previousTier {
+            StoryLimitManager.shared.onSubscriptionChanged(tier: newTier)
+        }
     }
 
     // MARK: - Transaction Listener
