@@ -28,9 +28,9 @@ struct SettingsView: View {
                             .frame(width: 32)
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Buky Premium", comment: "Subscription active label")
-                                .font(.headline)
+                                .font(.h4Bold)
                             Text(viewModel.currentTierLabel)
-                                .font(.subheadline)
+                                .font(.bodyRegular)
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -44,6 +44,7 @@ struct SettingsView: View {
                                 .foregroundStyle(.secondary)
                                 .frame(width: 32)
                             Text("Manage Subscription", comment: "Button to manage subscription")
+                                .font(.h5Medium)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
                             Spacer()
                             Image(systemName: "chevron.right")
@@ -68,9 +69,11 @@ struct SettingsView: View {
                                 .frame(width: 32)
                             VStack(alignment: .leading, spacing: 2) {
                                 Text("Get Buky Premium", comment: "Upgrade to premium button")
+                                    .font(.h4Bold)
                                     .foregroundColor(colorScheme == .dark ? .white : .black)
                                 Text("Unlock all stories and features", comment: "Premium upgrade subtitle")
-                                    .font(.subheadline)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                                    .font(.h5Bold)
                                     .foregroundStyle(.secondary)
                             }
                             Spacer()
@@ -82,6 +85,7 @@ struct SettingsView: View {
                 }
             } header: {
                 Text("Subscription", comment: "Subscription section header")
+                    .font(.captionRegular)
             }
 
             // MARK: - General
@@ -101,6 +105,27 @@ struct SettingsView: View {
                             )
                             .frame(width: 32)
                         Text("Reading tips", comment: "Settings row to view reading tips")
+                            .font(.h5Medium)
+                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
+                Button {
+                    Task {
+                        await subscriptionManager.restorePurchases()
+                    }
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "arrow.clockwise")
+                            .font(.system(size: 20))
+                            .foregroundStyle(.secondary)
+                            .frame(width: 32)
+                        Text("Restore Purchases", comment: "Restore purchases button")
+                            .font(.h5Medium)
                             .foregroundColor(colorScheme == .dark ? .white : .black)
                         Spacer()
                         Image(systemName: "chevron.right")
@@ -116,7 +141,6 @@ struct SettingsView: View {
         }
         .fullScreenCover(isPresented: $showSubscriptionView) {
             SubscriptionView()
-                .environmentObject(subscriptionManager)
         }
         .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
     }

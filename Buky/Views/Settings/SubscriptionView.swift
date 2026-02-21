@@ -3,12 +3,9 @@ import StoreKit
 
 struct SubscriptionView: View {
 
-    @EnvironmentObject var subscriptionManager: SubscriptionManager
+    @StateObject private var viewModel = SubscriptionViewModel()
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
-
-    @State private var selectedProductID: String?
-    @State private var isPurchasing = false
 
     private var isDarkMode: Bool { colorScheme == .dark }
 
@@ -23,16 +20,19 @@ struct SubscriptionView: View {
             .overlay(Color.black.opacity(isDarkMode ? 0.35 : 0))
             .ignoresSafeArea()
 
-            ScrollView {
-                VStack(spacing: 24) {
-                    headerView
-                    plansSection
-                    featuresSection
-                    subscribeButton
-                    restoreButton
+            VStack(spacing: 0) {
+                ScrollView {
+                    VStack(spacing: 24) {
+                        headerView
+                        plansSection
+                        featuresSection
+                    }
+                    .padding()
                 }
-                .padding()
-                .padding(.bottom)
+
+                subscribeButton
+                    .padding()
+                    .background(Color.cuarterlyBrand)
             }
         }
         .overlay(alignment: .topTrailing) {
@@ -45,12 +45,12 @@ struct SubscriptionView: View {
             .padding()
         }
         .alert("Error", isPresented: Binding(
-            get: { subscriptionManager.errorMessage != nil },
-            set: { if !$0 { subscriptionManager.errorMessage = nil } }
+            get: { viewModel.errorMessage != nil },
+            set: { if !$0 { viewModel.errorMessage = nil } }
         )) {
             Button("OK", role: .cancel) {}
         } message: {
-            if let msg = subscriptionManager.errorMessage {
+            if let msg = viewModel.errorMessage {
                 Text(msg)
             }
         }
@@ -81,16 +81,16 @@ struct SubscriptionView: View {
 
     private var plansSection: some View {
         HStack(spacing: 12) {
-            if let monthly = subscriptionManager.monthlyProduct {
+            if let monthly = viewModel.monthlyProduct {
                 PlanCardView(
-                    product: BukyProduct(from: monthly),
-                    selectedProductID: $selectedProductID
+                    product: monthly,
+                    selectedProductID: $viewModel.selectedProductID
                 )
             }
-            if let yearly = subscriptionManager.yearlyProduct {
+            if let yearly = viewModel.yearlyProduct {
                 PlanCardView(
-                    product: BukyProduct(from: yearly, discountText: String(localized: "Save 33%", comment: "Yearly discount badge")),
-                    selectedProductID: $selectedProductID
+                    product: yearly,
+                    selectedProductID: $viewModel.selectedProductID
                 )
             }
         }
@@ -157,23 +157,15 @@ struct SubscriptionView: View {
 
     private var subscribeButton: some View {
         Button {
-            guard let id = selectedProductID,
-                  let product = subscriptionManager.products.first(where: { $0.id == id }) else { return }
-            isPurchasing = true
             Task {
-                do {
-                    try await subscriptionManager.purchase(product)
-                    if subscriptionManager.isSubscribed {
-                        dismiss()
-                    }
-                } catch {
-                    subscriptionManager.errorMessage = error.localizedDescription
+                await viewModel.purchase()
+                if viewModel.isSubscribed {
+                    dismiss()
                 }
-                isPurchasing = false
             }
         } label: {
             Group {
-                if isPurchasing {
+                if viewModel.isPurchasing {
                     ProgressView()
                         .tint(Color.cuarterlyBrand)
                 } else {
@@ -181,35 +173,20 @@ struct SubscriptionView: View {
                         .font(.h4SemiBold)
                 }
             }
-            .foregroundStyle(selectedProductID != nil ? Color.cuarterlyBrand : .white.opacity(0.5))
+            .foregroundStyle(viewModel.hasSelection ? Color.cuarterlyBrand : .white.opacity(0.5))
             .frame(maxWidth: .infinity)
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 16)
-                    .fill(selectedProductID != nil ? .white : .white.opacity(0.15))
+                    .fill(viewModel.hasSelection ? .white : .white.opacity(0.15))
             )
         }
-        .disabled(selectedProductID == nil || isPurchasing)
+        .disabled(!viewModel.hasSelection || viewModel.isPurchasing)
         .buttonStyle(.plain)
     }
 
-    private var restoreButton: some View {
-        Button {
-            Task {
-                await subscriptionManager.restorePurchases()
-                if subscriptionManager.isSubscribed {
-                    dismiss()
-                }
-            }
-        } label: {
-            Text("Restore Purchases", comment: "Restore purchases button")
-                .font(.bodyRegular)
-                .foregroundStyle(.white.opacity(0.7))
-        }
-    }
 }
 
 #Preview {
     SubscriptionView()
-        .environmentObject(SubscriptionManager.shared)
 }
