@@ -1,5 +1,5 @@
 import Foundation
-import StoreKit
+import RevenueCat
 
 @MainActor
 final class SubscriptionViewModel: ObservableObject {
@@ -10,22 +10,22 @@ final class SubscriptionViewModel: ObservableObject {
     @Published var isPurchasing = false
 
     var products: [BukyProduct] {
-        subscriptionManager.products.map { product in
-            let discount: String? = product.id == SubscriptionManager.ProductID.yearly.rawValue
+        subscriptionManager.products.map { package in
+            let discount: String? = package.storeProduct.productIdentifier == SubscriptionManager.ProductID.yearly.rawValue
                 ? String(localized: "Save 33%", comment: "Yearly discount badge")
                 : nil
-            return BukyProduct(from: product, discountText: discount)
+            return BukyProduct(from: package, discountText: discount)
         }
     }
 
     var monthlyProduct: BukyProduct? {
-        guard let product = subscriptionManager.monthlyProduct else { return nil }
-        return BukyProduct(from: product)
+        guard let package = subscriptionManager.monthlyProduct else { return nil }
+        return BukyProduct(from: package)
     }
 
     var yearlyProduct: BukyProduct? {
-        guard let product = subscriptionManager.yearlyProduct else { return nil }
-        return BukyProduct(from: product, discountText: String(localized: "Save 33%", comment: "Yearly discount badge"))
+        guard let package = subscriptionManager.yearlyProduct else { return nil }
+        return BukyProduct(from: package, discountText: String(localized: "Save 33%", comment: "Yearly discount badge"))
     }
 
     var isSubscribed: Bool {
@@ -47,11 +47,11 @@ final class SubscriptionViewModel: ObservableObject {
 
     func purchase() async {
         guard let id = selectedProductID,
-              let product = subscriptionManager.products.first(where: { $0.id == id }) else { return }
+              let package = subscriptionManager.products.first(where: { $0.storeProduct.productIdentifier == id }) else { return }
 
         isPurchasing = true
         do {
-            try await subscriptionManager.purchase(product)
+            try await subscriptionManager.purchase(package)
         } catch {
             subscriptionManager.errorMessage = error.localizedDescription
         }
@@ -60,7 +60,7 @@ final class SubscriptionViewModel: ObservableObject {
 
     private func selectDefaultProduct() {
         if let last = subscriptionManager.products.last {
-            selectedProductID = last.id
+            selectedProductID = last.storeProduct.productIdentifier
         }
     }
 }

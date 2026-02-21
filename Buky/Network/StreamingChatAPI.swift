@@ -1,8 +1,11 @@
 import Foundation
 
 class StreamingChatAPI {
-//    private let baseURL = "http://localhost:3000"  // ← Local
+    #if targetEnvironment(simulator)
+    private let baseURL = "http://localhost:3000"
+    #else
     private let baseURL = "https://buky-smart-stories.vercel.app"
+    #endif
     
     func streamMessage(
         _ story: Story,

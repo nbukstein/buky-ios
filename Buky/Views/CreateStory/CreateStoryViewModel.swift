@@ -14,7 +14,6 @@ final class CreateStoryViewModel: ObservableObject {
     @Published var placeIndex: Int?
     @Published var mainCharacterIndexes: [Int] = []
     @Published var lessonIndex: Int?
-    @Published var providerIndex: Int?
 
     @Published var animalTypeIndex: Int?
     @Published var animalName: String = ""
@@ -33,8 +32,7 @@ final class CreateStoryViewModel: ObservableObject {
         storyLengthIndex != nil &&
         placeIndex != nil &&
         mainCharacterIndexes.count > 0 &&
-        lessonIndex != nil &&
-        providerIndex != nil
+        lessonIndex != nil
     }
 
     private var selectedCharacters: [Story.Characters] {
@@ -60,8 +58,7 @@ final class CreateStoryViewModel: ObservableObject {
         guard let childAgeIndex,
               let storyLengthIndex,
               let placeIndex,
-              let lessonIndex,
-              let providerIndex else {
+              let lessonIndex else {
             fatalError("Story is not fully initialized")
         }
 
@@ -69,7 +66,6 @@ final class CreateStoryViewModel: ObservableObject {
         story.storyTimeLength = Story.TimeLength.allCases[storyLengthIndex]
         story.place = Story.Place.allCases[placeIndex]
         story.lesson = Story.Lesson.allCases[lessonIndex]
-        story.provider = Story.AIProvider.allCases[providerIndex]
         for mainCharacterIndex in mainCharacterIndexes {
             story.characters.append(Story.Characters.allCases[mainCharacterIndex])
         }

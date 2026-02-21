@@ -1,4 +1,4 @@
-import StoreKit
+import RevenueCat
 
 struct BukyProduct: Identifiable {
     let id: String
@@ -8,14 +8,15 @@ struct BukyProduct: Identifiable {
     let discountText: String?
     let billedText: String
 
-    init(from product: Product, discountText: String? = nil) {
-        self.id = product.id
-        self.name = product.displayName
-        self.price = product.displayPrice
+    init(from package: Package, discountText: String? = nil) {
+        let product = package.storeProduct
+        self.id = product.productIdentifier
+        self.name = product.localizedTitle
+        self.price = product.localizedPriceString
         self.discountText = discountText
 
-        if let subscription = product.subscription {
-            switch subscription.subscriptionPeriod.unit {
+        if let subscription = product.subscriptionPeriod {
+            switch subscription.unit {
             case .month:
                 self.period = String(localized: "Monthly", comment: "Monthly period label")
                 self.billedText = String(localized: "Billed monthly", comment: "Billed per month label")
@@ -31,7 +32,7 @@ struct BukyProduct: Identifiable {
             self.billedText = ""
         }
     }
-    
+
     init(id: String,
          name: String,
          price: String,
@@ -46,5 +47,5 @@ struct BukyProduct: Identifiable {
         self.discountText = discountText
         self.billedText = billedText
     }
-    
+
 }

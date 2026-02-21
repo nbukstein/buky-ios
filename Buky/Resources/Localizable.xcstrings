@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld stories remaining" : {
+      "comment" : "Stories remaining count"
+    },
     "5 minutes" : {
       "comment" : "Title for the screen",
       "localizations" : {
@@ -776,6 +779,7 @@
     },
     "Choose your AI" : {
       "comment" : "Title for the AI provider section",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -3330,6 +3334,12 @@
     },
     "Reading tips" : {
       "comment" : "Settings row to view reading tips"
+    },
+    "Resets monthly" : {
+
+    },
+    "Resets weekly" : {
+
     },
     "Respect" : {
       "comment" : "Title for the respect",

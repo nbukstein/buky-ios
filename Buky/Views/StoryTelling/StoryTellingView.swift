@@ -95,7 +95,7 @@ struct StoryTellingView: View {
 
     private var storyBodyView: some View {
         Text(viewModel.storyBody)
-            .font(.bodySemiBold)
+            .font(.h5Medium)
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -112,6 +112,10 @@ struct StoryTellingView: View {
     private var bottomStickyButton: some View {
         Button(action: {
             viewModel.saveStory(context: modelContext)
+            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                router.dismissAllScreens()
+            }
         }) {
             Text(viewModel.isSaved ? "Story Saved" : "Save Story")
                 .font(.h3Bold)

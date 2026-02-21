@@ -1,5 +1,5 @@
 import Foundation
-import StoreKit
+import RevenueCat
 
 @MainActor
 final class SubscriptionManager: ObservableObject {
@@ -9,13 +9,13 @@ final class SubscriptionManager: ObservableObject {
     // MARK: - Product IDs
 
     enum ProductID: String, CaseIterable {
-        case monthly = "com.buky.monthly"
-        case yearly = "com.buky.yearly"
+        case monthly = "monthly"
+        case yearly = "yearly"
     }
 
     // MARK: - Published State
 
-    @Published private(set) var products: [Product] = []
+    @Published private(set) var products: [Package] = []
     @Published private(set) var purchasedProductIDs: Set<String> = []
     @Published private(set) var isLoading = false
     @Published var errorMessage: String?
@@ -33,12 +33,12 @@ final class SubscriptionManager: ObservableObject {
         return nil
     }
 
-    var monthlyProduct: Product? {
-        products.first { $0.id == ProductID.monthly.rawValue }
+    var monthlyProduct: Package? {
+        products.first { $0.storeProduct.productIdentifier == ProductID.monthly.rawValue }
     }
 
-    var yearlyProduct: Product? {
-        products.first { $0.id == ProductID.yearly.rawValue }
+    var yearlyProduct: Package? {
+        products.first { $0.storeProduct.productIdentifier == ProductID.yearly.rawValue }
     }
 
     // MARK: - Private
@@ -62,9 +62,12 @@ final class SubscriptionManager: ObservableObject {
         defer { isLoading = false }
 
         do {
-            let ids = ProductID.allCases.map(\.rawValue)
-            products = try await Product.products(for: ids)
-                .sorted { $0.price < $1.price }
+            let offerings = try await Purchases.shared.offerings()
+            if let current = offerings.current {
+                products = current.availablePackages.sorted {
+                    $0.storeProduct.price < $1.storeProduct.price
+                }
+            }
         } catch {
             errorMessage = error.localizedDescription
         }
@@ -73,25 +76,13 @@ final class SubscriptionManager: ObservableObject {
     // MARK: - Purchase
 
     @discardableResult
-    func purchase(_ product: Product) async throws -> StoreKit.Transaction? {
-        let result = try await product.purchase()
+    func purchase(_ package: Package) async throws -> StoreTransaction? {
+        let (transaction, _, userCancelled) = try await Purchases.shared.purchase(package: package)
 
-        switch result {
-        case .success(let verification):
-            let transaction = try checkVerified(verification)
-            await updatePurchasedProducts()
-            await transaction.finish()
-            return transaction
+        if userCancelled { return nil }
 
-        case .userCancelled:
-            return nil
-
-        case .pending:
-            return nil
-
-        @unknown default:
-            return nil
-        }
+        await updatePurchasedProducts()
+        return transaction
     }
 
     // MARK: - Restore Purchases
@@ -101,7 +92,7 @@ final class SubscriptionManager: ObservableObject {
         defer { isLoading = false }
 
         do {
-            try await AppStore.sync()
+            _ = try await Purchases.shared.restorePurchases()
             await updatePurchasedProducts()
         } catch {
             errorMessage = error.localizedDescription
@@ -110,10 +101,9 @@ final class SubscriptionManager: ObservableObject {
 
     // MARK: - Check Subscription Status
 
-    /// Checks whether the user has an active subscription by syncing with the App Store.
-    /// Throws if the App Store cannot be reached.
+    /// Checks whether the user has an active subscription via RevenueCat.
+    /// Throws if RevenueCat cannot be reached.
     func checkSubscriptionStatus() async throws -> Bool {
-        try await AppStore.sync()
         await updatePurchasedProducts()
         return isSubscribed
     }
@@ -122,15 +112,13 @@ final class SubscriptionManager: ObservableObject {
 
     func updatePurchasedProducts() async {
         let previousTier = currentSubscriptionTier
-        var purchased: Set<String> = []
 
-        for await result in StoreKit.Transaction.currentEntitlements {
-            if let transaction = try? checkVerified(result) {
-                purchased.insert(transaction.productID)
-            }
+        do {
+            let customerInfo = try await Purchases.shared.customerInfo()
+            purchasedProductIDs = customerInfo.activeSubscriptions
+        } catch {
+            errorMessage = error.localizedDescription
         }
-
-        purchasedProductIDs = purchased
 
         let newTier = currentSubscriptionTier
         if newTier != previousTier {
@@ -142,37 +130,8 @@ final class SubscriptionManager: ObservableObject {
 
     private func listenForTransactions() -> Task<Void, Never> {
         Task.detached { [weak self] in
-            for await result in StoreKit.Transaction.updates {
-                if let transaction = try? await self?.checkVerified(result) {
-                    await self?.updatePurchasedProducts()
-                    await transaction.finish()
-                }
-            }
-        }
-    }
-
-    // MARK: - Verification
-
-    private func checkVerified<T>(_ result: VerificationResult<T>) throws -> T {
-        switch result {
-        case .unverified:
-            throw StoreError.failedVerification
-        case .verified(let value):
-            return value
-        }
-    }
-}
-
-// MARK: - Errors
-
-extension SubscriptionManager {
-    enum StoreError: LocalizedError {
-        case failedVerification
-
-        var errorDescription: String? {
-            switch self {
-            case .failedVerification:
-                return "Transaction verification failed."
+            for await _ in Purchases.shared.customerInfoStream {
+                await self?.updatePurchasedProducts()
             }
         }
     }

@@ -20,7 +20,6 @@ final class Story: Codable {
         case characters
         case lesson
         case language
-        case provider
         case characterName = "character_name"
         case animalType = "animal_type"
         case animalName = "animal_name"
@@ -103,11 +102,6 @@ final class Story: Codable {
         case joy
     }
 
-    enum AIProvider: String, Codable, CaseIterable {
-        case claude
-        case openai
-    }
-
     enum CharacterSubtype: String, Codable, CaseIterable {
         // Animals
         case dog
@@ -137,7 +131,6 @@ final class Story: Codable {
     var characters: [Characters]
     var lesson: Lesson?
     var language: String?
-    var provider: AIProvider?
     var animalType: CharacterSubtype?
     var animalName: String?
     var personType: CharacterSubtype?
@@ -153,7 +146,6 @@ final class Story: Codable {
         characters = try container.decodeIfPresent(Array<Characters>.self, forKey: .characters) ?? []
         lesson = try container.decodeIfPresent(Lesson.self, forKey: .lesson)
         language = try container.decodeIfPresent(String.self, forKey: .language)
-        provider = try container.decodeIfPresent(AIProvider.self, forKey: .provider)
         animalType = try container.decodeIfPresent(CharacterSubtype.self, forKey: .animalType)
         animalName = try container.decodeIfPresent(String.self, forKey: .animalName)
         personType = try container.decodeIfPresent(CharacterSubtype.self, forKey: .personType)
@@ -177,7 +169,6 @@ final class Story: Codable {
         try container.encodeIfPresent(place, forKey: .place)
         try container.encodeIfPresent(lesson, forKey: .lesson)
         try container.encodeIfPresent(language, forKey: .language)
-        try container.encodeIfPresent(provider?.rawValue, forKey: .provider)
 
         try container.encodeIfPresent(animalType, forKey: .animalType)
         try container.encodeIfPresent(animalName, forKey: .animalName)
@@ -216,11 +207,10 @@ final class Story: Codable {
          characters: [Characters],
          lesson: Lesson,
          language: String,
-         provider: AIProvider,
          animalType: CharacterSubtype? = nil,
          animalName: String? = nil,
          personType: CharacterSubtype? = nil,
-         personName: String? = nil,
+         personName: String? = nil
     ) {
         self.text = text
         self.dateCreated = dateCreated
@@ -230,7 +220,6 @@ final class Story: Codable {
         self.characters = characters
         self.lesson = lesson
         self.language = language
-        self.provider = provider
         self.animalType = animalType
         self.animalName = animalName
         self.personType = personType
@@ -246,7 +235,6 @@ final class Story: Codable {
         self.characters = []
         self.lesson = nil
         self.language = nil
-        self.provider = nil
         self.animalType = nil
         self.animalName = nil
         self.personType = nil

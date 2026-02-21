@@ -6,6 +6,7 @@ struct SettingsView: View {
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var subscriptionManager: SubscriptionManager
     @StateObject private var viewModel = SettingsViewModel()
+    @ObservedObject private var storyLimitManager = StoryLimitManager.shared
     @State private var showReadingTips = false
     @State private var showManageSubscriptions = false
     @State private var showSubscriptionView = false
@@ -86,6 +87,31 @@ struct SettingsView: View {
             } header: {
                 Text("Subscription", comment: "Subscription section header")
                     .font(.captionRegular)
+            }
+
+            // MARK: - Stories Remaining
+            Section {
+                HStack(spacing: 12) {
+                    Image(systemName: "book.fill")
+                        .font(.system(size: 20))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.tertiaryBrand, .cuarterlyBrand],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .frame(width: 32)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("\(storyLimitManager.storiesRemaining) stories remaining", comment: "Stories remaining count")
+                            .font(.h5Medium)
+                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                        Text(viewModel.isSubscribed ? "Resets monthly" : "Resets weekly", comment: "Story limit reset period")
+                            .font(.bodyRegular)
+                            .foregroundStyle(.secondary)
+                    }
+                    Spacer()
+                }
             }
 
             // MARK: - General

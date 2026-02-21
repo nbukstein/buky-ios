@@ -1,13 +1,7 @@
-//
-//  BukyApp.swift
-//  Buky
-//
-//  Created by Nicolas Bukstein on 28/1/26.
-//
-
 import SwiftUI
 import SwiftfulRouting
 import SwiftData
+import RevenueCat
 
 @main
 struct BukyApp: App {
@@ -24,6 +18,9 @@ struct BukyApp: App {
         UINavigationBar.appearance().titleTextAttributes = [
             .font: UIFont(name: "Quicksand-Bold", size: 20)!
         ]
+        
+        Purchases.configure(withAPIKey: "test_DYxJizfDlSgDGpwKMhoqgVKfjim")
+
     }
     
     static let sharedModelContainer: ModelContainer = {
