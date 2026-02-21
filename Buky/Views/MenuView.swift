@@ -12,6 +12,11 @@ import SwiftData
 struct MenuView: View {
     
     @Environment(\.router) var router
+    @Environment(\.colorScheme) var colorScheme
+    
+    private var isDarkMode: Bool {
+        colorScheme == .dark
+    }
     
     enum Constants {
         static let createNewStorySectionTitle = String(localized: "Create new story", comment: "Title for the create new story button")
@@ -21,98 +26,99 @@ struct MenuView: View {
     }
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             headerContentView
             mainContentView
+                .padding(.top, -15)
         }
-        .padding(.top)
-        .background(
-            headerGradient
-        )
     }
 
     private var headerContentView: some View {
-        VStack {
-            Image(.stories).padding(-20)
-            Text("Buky story maker", comment: "")
-                .font(.h2Bold)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .padding(.bottom)
-                .frame(maxWidth: .infinity)
-            Text("Make great stories using AI", comment: "")
-                .font(.h5SemiBold)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .padding(.bottom)
-                .frame(maxWidth: .infinity)
+        ZStack(alignment: .topLeading) {
+            VStack {
+                Spacer()
+                Text("Make great stories using AI", comment: "")
+                    .font(.h3Bold)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 25)
+                    .padding(.horizontal)
+            }
+            Button {
+                router.showScreen(.push) { _ in
+                    SettingsView()
+                }
+            } label: {
+                Image(systemName: "gearshape.fill")
+                    .font(.system(size: 28))
+                    .foregroundStyle(.white)
+                    .padding(10)
+                    .background(isDarkMode ? Color.backgroundDark : Color.clear)
+                    .clipShape(Circle())
+                    .shadow(color: isDarkMode ? .black.opacity(0.5) : .clear, radius: 8)
+            }
+            .padding(.top, 50)
+            .padding(.leading, 10)
         }
-    }
-
-    private var headerGradient: LinearGradient {
-        LinearGradient(
-            colors: [Color.primaryBrand, Color.secondaryBrand],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
+        .background(
+            Image(colorScheme == .dark ? .menuHeaderBackgorundDark : .menuHeaderBackgorund)
+                .resizable()
+                .scaledToFill()
         )
+        
+        .ignoresSafeArea(edges: .top)
     }
     
     private var mainContentView: some View {
-        VStack {
-            subtitleView
+        VStack(spacing: 0) {
             sectionsView
-            Spacer()
+                .padding(.top)
+//            Spacer()
         }
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(isDarkMode ? Color.backgroundDark : Color.white)
         .clipShape(
             UnevenRoundedRectangle(
                 topLeadingRadius: 20,
                 topTrailingRadius: 20
-                // bottomLeadingRadius and bottomTrailingRadius default to 0
             )
         )
         .edgesIgnoringSafeArea(.bottom)
     }
 
-    private var subtitleView: some View {
-        VStack {
-            Text("Hi little writer")
-                .font(.h3Bold)
-                .foregroundColor(.black)
-                .padding(.top)
-            Text("What would you like to do today?")
-                .font(.captionRegular)
-                .foregroundColor(.black)
-        }
-    }
-
     private var sectionsView: some View {
         VStack {
+//            Spacer()
             makeSection(title: Constants.createNewStorySectionTitle,
                         subtitle: Constants.createNewStorySectionSubtitle,
                         icon: "wand.and.sparkles",
-                        firstColor: Color.tertiaryBrand,
-                        lastColor: Color.cuarterlyBrand
+                        firstColor: isDarkMode ? Color.tertiaryBrand : Color.tertiaryBrand,
+                        lastColor: isDarkMode ? Color.cuarterlyBrand : Color.cuarterlyBrand
             ) {
                 router.showScreen(.push) { _ in
                     CreateStoryView(viewModel: .init())
                         .modelContainer(BukyApp.sharedModelContainer)
                 }
             }
-            .padding()
+            .padding(.horizontal)
+            .padding(.top)
+            Spacer()
             makeSection(title: Constants.savedStoriesSectionTitle,
                         subtitle: Constants.savedStoriesSectionSubtitle,
                         icon: "bookmark.fill",
-                        firstColor: Color.savedColorOne,
-                        lastColor: Color.savedColorTwo
+                        firstColor: isDarkMode ? Color.savedColorOne : Color.savedColorOne,
+                        lastColor: isDarkMode ? Color.savedColorTwo : Color.savedColorTwo
             ) {
                 router.showScreen(.push) { _ in
                     SavedStoriesView()
                         .modelContainer(BukyApp.sharedModelContainer)
                 }
             }
-            .padding(.horizontal).padding(.top)
+            .padding(.horizontal)
+            Spacer()
         }
     }
 
@@ -127,17 +133,27 @@ struct MenuView: View {
         Button(action: action) {
             HStack {
                 VStack(alignment: .leading) {
-                    Image(systemName: icon)
-                        .font(.system(size: 24))
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(Color.white.opacity(0.3))
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                    Text(title)
-                        .font(.h5SemiBold)
-                        .foregroundColor(.white)
+//                    Image(systemName: icon)
+//                        .font(.system(size: 15))
+//                        .foregroundStyle(.white)
+//                        .padding()
+//                        .background(Color.white.opacity(0.3))
+//                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    HStack(alignment: .center) {
+                        Image(systemName: icon)
+                            .font(.system(size: 20))
+                            .foregroundStyle(.white)
+//                            .padding()
+//                            .background(Color.white.opacity(0.3))
+//                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                        Text(title)
+                            .font(.h4SemiBold)
+                            .foregroundColor(.white)
+//                            .padding(.bottom)
+                    }
+                    .padding(.bottom)
                     Text(subtitle)
-                        .font(.bodyRegular)
+                        .font(.h5Medium)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                 }
@@ -154,6 +170,7 @@ struct MenuView: View {
                     startPoint: .leading,
                     endPoint: .trailing
                 )
+                .overlay(Color.black.opacity(isDarkMode ? 0.45 : 0 ))
             )
             .clipShape(RoundedRectangle(cornerRadius: 20))
         }

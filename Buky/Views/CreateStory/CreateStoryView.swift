@@ -19,6 +19,7 @@ struct CreateStoryView: View {
     @StateObject var viewModel: CreateStoryViewModel
 
     @Environment(\.router) var router
+    @Environment(\.colorScheme) var colorScheme
     
     init(viewModel: CreateStoryViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
@@ -26,7 +27,7 @@ struct CreateStoryView: View {
     
     var body: some View {
         sectionsView
-            .navigationTitle(Constants.title)
+            .background(colorScheme == .dark ? Color.backgroundDark : Color.clear)
             .safeAreaInset(edge: .bottom) {
             VStack {
                 bottomStickyButton
@@ -72,6 +73,7 @@ struct CreateStoryView: View {
     
     private var headerView: some View {
         VStack {
+            Spacer(minLength: 50)
             Image(systemName: "wand.and.sparkles")
                 .font(.system(size: 35))
                 .foregroundStyle(.white)
@@ -80,10 +82,12 @@ struct CreateStoryView: View {
                 .clipShape(.circle)
             Text(Constants.headerTitle)
                 .font(.h3Bold)
-                .padding()
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical)
+        .padding()
+//        .edgesIgnoringSafeArea(.top)
     }
     
     
@@ -161,6 +165,7 @@ struct CreateStoryView: View {
                 }
             )
         }
+        .edgesIgnoringSafeArea(.top)
     }
     
 }

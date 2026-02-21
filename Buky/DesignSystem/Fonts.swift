@@ -27,6 +27,14 @@ public extension Font {
         .custom(boldName, size: 20, relativeTo: .title3)
     }
     
+    static var h4Bold: Font {
+        .custom(boldName, size: 18, relativeTo: .title3)
+    }
+    
+    static var h4SemiBold: Font {
+        .custom(semiBoldName, size: 18, relativeTo: .title3)
+    }
+    
     static var h5Medium: Font {
         .custom(mediumName, size: 16, relativeTo: .subheadline)
     }

@@ -15,8 +15,15 @@ extension Color {
     static let characterNameColor = Color(hex: "#F59E0B")
     
 
+    // Dark Mode Section Gradients
+    static let tertiaryBrandDark = Color(hex: "#BE185D")
+    static let cuarterlyBrandDark = Color(hex: "#7C3AED")
+    static let savedColorOneDark = Color(hex: "#2563EB")
+    static let savedColorTwoDark = Color(hex: "#4338CA")
+
     // Neutral Palette
     static let backgroundPrimary = Color(hex: "#FFFFFF")  // White
+    static let backgroundDark = Color(hex: "#1C1C1E")     // Dark
     static let textPrimary = Color(hex: "#000000")        // Black
     static let borderGray = Color(hex: "#C6C6C6")         // Light Gray
     
