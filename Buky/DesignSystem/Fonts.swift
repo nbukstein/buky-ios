@@ -43,6 +43,10 @@ public extension Font {
         .custom(semiBoldName, size: 16, relativeTo: .subheadline)
     }
     
+    static var h5Bold: Font {
+        .custom(boldName, size: 16, relativeTo: .subheadline)
+    }
+    
     static var bodyRegular: Font {
         .custom(regularName, size: 14, relativeTo: .body)
     }

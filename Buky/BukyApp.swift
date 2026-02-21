@@ -11,6 +11,8 @@ import SwiftData
 
 @main
 struct BukyApp: App {
+
+    @StateObject private var subscriptionManager = SubscriptionManager.shared
     
     init() {
         // For large titles:
@@ -42,6 +44,11 @@ struct BukyApp: App {
             RouterView { router in
                 MenuView()
                     .edgesIgnoringSafeArea(.bottom)
+            }
+            .environmentObject(subscriptionManager)
+            .task {
+                await subscriptionManager.fetchProducts()
+                await subscriptionManager.updatePurchasedProducts()
             }
         }
         .modelContainer(BukyApp.sharedModelContainer)
