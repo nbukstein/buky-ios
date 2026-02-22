@@ -23,6 +23,9 @@ struct BukyApp: App {
 
         // Initialize Analytics
         _ = AnalyticsManager.shared
+
+        // Initialize Notifications (requests permission on first launch)
+        _ = NotificationManager.shared
     }
     
     static let sharedModelContainer: ModelContainer = {
@@ -51,6 +54,9 @@ struct BukyApp: App {
 
                 // Track app launch
                 AnalyticsManager.shared.trackAppLaunch()
+
+                // Reset inactivity reminder on every app open
+                NotificationManager.shared.scheduleInactivityReminder()
             }
         }
         .modelContainer(BukyApp.sharedModelContainer)

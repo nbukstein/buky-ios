@@ -179,6 +179,13 @@ final class CreateStoryViewModel: ObservableObject {
         story.dateCreated = Date()
         story.userId = UserStorageManager.shared.userID
         story.countryCode = Locale.current.region?.identifier
+
+        // Reset inactivity reminder on story creation
+        NotificationManager.shared.scheduleInactivityReminder()
+
+        // Schedule one-time milestone notification for the first story
+        NotificationManager.shared.scheduleFirstStoryMilestone()
+
         return story
     }
 }
