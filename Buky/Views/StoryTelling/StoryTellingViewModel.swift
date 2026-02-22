@@ -20,6 +20,11 @@ final class StoryTellingViewModel: ObservableObject {
     @Published var errorMessage: String?
     @Published var showReadingTips = false
     @Published var isFirstTimeTips = true
+    @Published var feedbackGiven: Bool? = nil
+
+    private(set) var serverStoryId: String?
+    private(set) var tone: String?
+    private(set) var narrativeStructure: String?
 
     let isReadOnly: Bool
 
@@ -77,7 +82,13 @@ final class StoryTellingViewModel: ObservableObject {
         // Track story streaming started
         AnalyticsManager.shared.trackStoryStreamingStarted(story: story)
 
-        await streamingChatAPI.streamMessage(story) { chunk in
+        await streamingChatAPI.streamMessage(story) { headers in
+            Task { @MainActor in
+                self.serverStoryId = headers.storyId
+                self.tone = headers.tone
+                self.narrativeStructure = headers.narrativeStructure
+            }
+        } onChunk: { chunk in
             Task { @MainActor in
                 self.enqueueChunk(chunk)
             }
@@ -142,6 +153,24 @@ final class StoryTellingViewModel: ObservableObject {
         AnalyticsManager.shared.trackReadingTipsDismissed(isFirstTime: isFirstTimeTips)
         if isFirstTimeTips {
             hasSeenReadingTips = true
+        }
+    }
+
+    @MainActor
+    func sendFeedback(rating: Bool) {
+        feedbackGiven = rating
+        let feedback = Feedback(
+            userId: story.userId ?? "",
+            storyId: serverStoryId ?? "",
+            rating: rating,
+            characters: story.characters.map(\.rawValue),
+            lesson: story.lesson?.rawValue ?? "",
+            tone: tone ?? "",
+            narrativeStructure: narrativeStructure ?? "",
+            place: story.place?.rawValue ?? ""
+        )
+        Task {
+            try? await streamingChatAPI.sendFeedback(feedback)
         }
     }
 

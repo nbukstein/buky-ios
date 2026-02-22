@@ -177,6 +177,8 @@ final class CreateStoryViewModel: ObservableObject {
             story.language = "English"
         }
         story.dateCreated = Date()
+        story.userId = UserStorageManager.shared.userID
+        story.countryCode = Locale.current.region?.identifier
         return story
     }
 }

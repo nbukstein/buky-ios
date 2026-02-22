@@ -92,6 +92,9 @@ struct StoryTellingView: View {
             storyHeaderView
             ScrollView {
                 storyBodyView
+                if viewModel.finishedReceivingStory {
+                    feedbackView
+                }
                 Spacer()
             }
         }
@@ -107,6 +110,35 @@ struct StoryTellingView: View {
             .font(.h5Medium)
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var feedbackView: some View {
+        HStack(spacing: 24) {
+            Button {
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                withAnimation {
+                    viewModel.sendFeedback(rating: false)
+                }
+            } label: {
+                Image(systemName: viewModel.feedbackGiven == false ? "hand.thumbsdown.fill" : "hand.thumbsdown")
+                    .font(.title2)
+                    .foregroundStyle(.red)
+            }
+            .disabled(viewModel.feedbackGiven != nil)
+
+            Button {
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                withAnimation {
+                    viewModel.sendFeedback(rating: true)
+                }
+            } label: {
+                Image(systemName: viewModel.feedbackGiven == true ? "hand.thumbsup.fill" : "hand.thumbsup")
+                    .font(.title2)
+                    .foregroundStyle(.green)
+            }
+            .disabled(viewModel.feedbackGiven != nil)
+        }
+        .padding(.top, 8)
     }
 
     private var storyHeaderView: some View {

@@ -7,8 +7,15 @@ class StreamingChatAPI {
     private let baseURL = "https://buky-smart-stories.vercel.app"
     #endif
     
+    struct ResponseHeaders {
+        let storyId: String?
+        let tone: String?
+        let narrativeStructure: String?
+    }
+
     func streamMessage(
         _ story: Story,
+        onHeaders: @escaping (ResponseHeaders) -> Void,
         onChunk: @escaping (String) -> Void,
         onComplete: @escaping () -> Void,
         onError: @escaping (Error) -> Void
@@ -47,7 +54,14 @@ class StreamingChatAPI {
                 await MainActor.run { onError(APIError.serverError(httpResponse.statusCode)) }
                 return
             }
-            
+
+            let headers = ResponseHeaders(
+                storyId: httpResponse.value(forHTTPHeaderField: "X-Story-Id"),
+                tone: httpResponse.value(forHTTPHeaderField: "X-Tone"),
+                narrativeStructure: httpResponse.value(forHTTPHeaderField: "X-Narrative-Structure")
+            )
+            await MainActor.run { onHeaders(headers) }
+
             // ✅ CAMBIO CLAVE: Usar Data buffer en lugar de String
             var dataBuffer = Data()
             
@@ -112,6 +126,27 @@ class StreamingChatAPI {
             
         } catch {
             await MainActor.run { onError(error) }
+        }
+    }
+    func sendFeedback(_ feedback: Feedback) async throws {
+        guard let url = URL(string: "\(baseURL)/api/feedback") else {
+            throw APIError.invalidURL
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+
+        request.httpBody = try JSONEncoder().encode(feedback)
+
+        let (_, response) = try await URLSession.shared.data(for: request)
+
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw APIError.invalidResponse
+        }
+
+        guard httpResponse.statusCode == 200 else {
+            throw APIError.serverError(httpResponse.statusCode)
         }
     }
 }

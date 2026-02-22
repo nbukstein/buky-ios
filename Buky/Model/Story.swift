@@ -25,6 +25,8 @@ final class Story: Codable {
         case animalName = "animal_name"
         case personType = "person_type"
         case personName = "person_name"
+        case userId = "userId"
+        case countryCode = "countryCode"
     }
 
     enum ChildAge: Codable, CaseIterable {
@@ -135,6 +137,8 @@ final class Story: Codable {
     var animalName: String?
     var personType: CharacterSubtype?
     var personName: String?
+    var userId: String?
+    var countryCode: String?
 
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -150,6 +154,8 @@ final class Story: Codable {
         animalName = try container.decodeIfPresent(String.self, forKey: .animalName)
         personType = try container.decodeIfPresent(CharacterSubtype.self, forKey: .personType)
         personName = try container.decodeIfPresent(String.self, forKey: .personName)
+        userId = try container.decodeIfPresent(String.self, forKey: .userId)
+        countryCode = try container.decodeIfPresent(String.self, forKey: .countryCode)
     }
 
     func encode(to encoder: any Encoder) throws {
@@ -174,6 +180,8 @@ final class Story: Codable {
         try container.encodeIfPresent(animalName, forKey: .animalName)
         try container.encodeIfPresent(personType, forKey: .personType)
         try container.encodeIfPresent(personName, forKey: .personName)
+        try container.encodeIfPresent(userId, forKey: .userId)
+        try container.encodeIfPresent(countryCode, forKey: .countryCode)
         var characterDescriptions: [String] = []
 
         if let animalType {
@@ -210,7 +218,9 @@ final class Story: Codable {
          animalType: CharacterSubtype? = nil,
          animalName: String? = nil,
          personType: CharacterSubtype? = nil,
-         personName: String? = nil
+         personName: String? = nil,
+         userId: String? = nil,
+         countryCode: String? = nil
     ) {
         self.text = text
         self.dateCreated = dateCreated
@@ -224,6 +234,8 @@ final class Story: Codable {
         self.animalName = animalName
         self.personType = personType
         self.personName = personName
+        self.userId = userId
+        self.countryCode = countryCode
     }
 
     init() {
@@ -239,5 +251,7 @@ final class Story: Codable {
         self.animalName = nil
         self.personType = nil
         self.personName = nil
+        self.userId = nil
+        self.countryCode = nil
     }
 }
