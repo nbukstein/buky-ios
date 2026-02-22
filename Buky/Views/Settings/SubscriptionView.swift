@@ -34,8 +34,14 @@ struct SubscriptionView: View {
                     .background(Color.cuarterlyBrand)
             }
         }
+        .onAppear {
+            AnalyticsManager.shared.trackSubscriptionScreenViewed(source: "Settings")
+        }
         .overlay(alignment: .topTrailing) {
-            Button { dismiss() } label: {
+            Button {
+                AnalyticsManager.shared.trackScreenClosed(screenName: "Subscription", action: "close")
+                dismiss()
+            } label: {
                 Image(systemName: "xmark.circle.fill")
                     .font(.system(size: 28))
                     .symbolRenderingMode(.hierarchical)

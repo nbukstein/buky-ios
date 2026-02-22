@@ -9,15 +9,98 @@ import SwiftUI
 
 @MainActor
 final class CreateStoryViewModel: ObservableObject {
-    @Published var childAgeIndex: Int?
-    @Published var storyLengthIndex: Int?
-    @Published var placeIndex: Int?
-    @Published var mainCharacterIndexes: [Int] = []
-    @Published var lessonIndex: Int?
+    @Published var childAgeIndex: Int? {
+        didSet {
+            if let index = childAgeIndex {
+                let age = Story.ChildAge.allCases[index]
+                AnalyticsManager.shared.trackStoryConfigurationSelected(
+                    configurationType: "child_age",
+                    value: age.ageRange
+                )
+            }
+        }
+    }
 
-    @Published var animalTypeIndex: Int?
+    @Published var storyLengthIndex: Int? {
+        didSet {
+            if let index = storyLengthIndex {
+                let length = Story.TimeLength.allCases[index]
+                AnalyticsManager.shared.trackStoryConfigurationSelected(
+                    configurationType: "story_length",
+                    value: length.apiValue
+                )
+            }
+        }
+    }
+
+    @Published var placeIndex: Int? {
+        didSet {
+            if let index = placeIndex {
+                let place = Story.Place.allCases[index]
+                AnalyticsManager.shared.trackStoryConfigurationSelected(
+                    configurationType: "place",
+                    value: place.rawValue
+                )
+            }
+        }
+    }
+
+    @Published var mainCharacterIndexes: [Int] = [] {
+        didSet {
+            if !mainCharacterIndexes.isEmpty {
+                let characters = mainCharacterIndexes.map { Story.Characters.allCases[$0].rawValue }
+                AnalyticsManager.shared.trackStoryConfigurationSelected(
+                    configurationType: "characters",
+                    value: characters.joined(separator: ", ")
+                )
+            }
+        }
+    }
+
+    @Published var lessonIndex: Int? {
+        didSet {
+            if let index = lessonIndex {
+                let lesson = Story.Lesson.allCases[index]
+                AnalyticsManager.shared.trackStoryConfigurationSelected(
+                    configurationType: "lesson",
+                    value: lesson.rawValue
+                )
+            }
+        }
+    }
+
+    @Published var animalTypeIndex: Int? {
+        didSet {
+            if let index = animalTypeIndex {
+                let animalCases = Story.Characters.animals.subtypes
+                if index < animalCases.count {
+                    let animalType = animalCases[index]
+                    AnalyticsManager.shared.trackStoryConfigurationSelected(
+                        configurationType: "animal_type",
+                        value: animalType.rawValue
+                    )
+                }
+            }
+        }
+    }
+
     @Published var animalName: String = ""
-    @Published var personTypeIndex: Int?
+
+    @Published var personTypeIndex: Int? {
+        didSet {
+            if let index = personTypeIndex {
+                let peopleCases = Story.Characters.people.subtypes
+                if index < peopleCases.count {
+                    let personType = peopleCases[index]
+                    AnalyticsManager.shared.trackStoryConfigurationSelected(
+                        configurationType: "person_type",
+                        value: personType.rawValue
+                    )
+                }
+            }
+        }
+    }
+
     @Published var personName: String = ""
 
     private let storyLimitManager = StoryLimitManager.shared

@@ -13,14 +13,16 @@ struct BukyApp: App {
         UINavigationBar.appearance().largeTitleTextAttributes = [
             .font: UIFont(name: "Quicksand-Bold", size: 30)!
         ]
-        
+
         // For inline (small) titles:
         UINavigationBar.appearance().titleTextAttributes = [
             .font: UIFont(name: "Quicksand-Bold", size: 20)!
         ]
-        
+
         Purchases.configure(withAPIKey: "test_DYxJizfDlSgDGpwKMhoqgVKfjim")
 
+        // Initialize Analytics
+        _ = AnalyticsManager.shared
     }
     
     static let sharedModelContainer: ModelContainer = {
@@ -46,9 +48,12 @@ struct BukyApp: App {
             .task {
                 await subscriptionManager.fetchProducts()
                 await subscriptionManager.updatePurchasedProducts()
+
+                // Track app launch
+                AnalyticsManager.shared.trackAppLaunch()
             }
         }
         .modelContainer(BukyApp.sharedModelContainer)
-        
+
     }
 }

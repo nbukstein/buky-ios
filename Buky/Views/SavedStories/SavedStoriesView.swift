@@ -27,6 +27,12 @@ struct SavedStoriesView: View {
             }
         }
         .navigationTitle("Saved stories")
+        .onAppear {
+            AnalyticsManager.shared.trackScreenView(screenName: "Saved Stories", source: "Menu")
+        }
+        .onDisappear {
+            AnalyticsManager.shared.trackScreenClosed(screenName: "Saved Stories")
+        }
         .alert("Delete story", isPresented: $showDeleteAlert) {
             Button("Delete", role: .destructive) {
                 if let story = storyToDelete {
@@ -67,6 +73,7 @@ struct SavedStoriesView: View {
                 ForEach(stories) { story in
                     storyCard(story: story)
                         .onTapGesture {
+                            AnalyticsManager.shared.trackSavedStoryOpened(story: story)
                             router.showScreen(.push) { _ in
                                 StoryTellingView(viewModel: .init(story: story, isReadOnly: true))
                                     .modelContainer(BukyApp.sharedModelContainer)

@@ -74,6 +74,9 @@ final class StoryTellingViewModel: ObservableObject {
         isLoadingStory = true
         storyText = ""
 
+        // Track story streaming started
+        AnalyticsManager.shared.trackStoryStreamingStarted(story: story)
+
         await streamingChatAPI.streamMessage(story) { chunk in
             Task { @MainActor in
                 self.enqueueChunk(chunk)
@@ -82,6 +85,8 @@ final class StoryTellingViewModel: ObservableObject {
             Task { @MainActor in
                 self.flushBuffer()
                 self.finishedReceivingStory = true
+                // Track story streaming completed
+                AnalyticsManager.shared.trackStoryStreamingCompleted(story: self.story)
             }
         } onError: { error in
             print(error)
@@ -114,22 +119,27 @@ final class StoryTellingViewModel: ObservableObject {
         }
     }
 
+    @MainActor
     func checkReadingTips() {
         guard !isReadOnly else { return }
         if !hasSeenReadingTips {
             isFirstTimeTips = true
             showReadingTips = true
+            AnalyticsManager.shared.trackReadingTipsShown(isFirstTime: true)
         } else {
             storiesReadCount += 1
             if storiesReadCount >= 20 {
                 isFirstTimeTips = false
                 showReadingTips = true
                 storiesReadCount = 0
+                AnalyticsManager.shared.trackReadingTipsShown(isFirstTime: false)
             }
         }
     }
 
+    @MainActor
     func onReadingTipsDismissed() {
+        AnalyticsManager.shared.trackReadingTipsDismissed(isFirstTime: isFirstTimeTips)
         if isFirstTimeTips {
             hasSeenReadingTips = true
         }

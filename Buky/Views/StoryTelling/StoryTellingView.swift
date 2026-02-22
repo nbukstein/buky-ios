@@ -50,7 +50,16 @@ struct StoryTellingView: View {
             }
         }
         .edgesIgnoringSafeArea(.bottom)
+        .onDisappear {
+            let screenName = viewModel.isReadOnly ? "Story Telling (Read Only)" : "Story Telling"
+            AnalyticsManager.shared.trackScreenClosed(screenName: screenName)
+        }
         .onAppear {
+            if viewModel.isReadOnly {
+                AnalyticsManager.shared.trackScreenView(screenName: "Story Telling (Read Only)", source: "Saved Stories")
+            } else {
+                AnalyticsManager.shared.trackScreenView(screenName: "Story Telling", source: "Create Story")
+            }
             viewModel.checkReadingTips()
             Task {
                 await viewModel.onAppear()
@@ -111,6 +120,7 @@ struct StoryTellingView: View {
 
     private var bottomStickyButton: some View {
         Button(action: {
+            AnalyticsManager.shared.trackStorySaved(story: viewModel.story)
             viewModel.saveStory(context: modelContext)
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {

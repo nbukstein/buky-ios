@@ -6,7 +6,17 @@ final class SubscriptionViewModel: ObservableObject {
 
     private let subscriptionManager = SubscriptionManager.shared
 
-    @Published var selectedProductID: String?
+    @Published var selectedProductID: String? {
+        didSet {
+            if let selectedID = selectedProductID,
+               let package = subscriptionManager.products.first(where: { $0.storeProduct.productIdentifier == selectedID }) {
+                let planType = selectedID
+                let price = package.storeProduct.localizedPriceString
+                AnalyticsManager.shared.trackSubscriptionPlanSelected(planType: planType, price: price)
+            }
+        }
+    }
+
     @Published var isPurchasing = false
 
     var products: [BukyProduct] {
@@ -49,10 +59,24 @@ final class SubscriptionViewModel: ObservableObject {
         guard let id = selectedProductID,
               let package = subscriptionManager.products.first(where: { $0.storeProduct.productIdentifier == id }) else { return }
 
+        let planType = id
+        let price = package.storeProduct.localizedPriceString
+
+        // Track purchase initiated
+        AnalyticsManager.shared.trackPurchaseInitiated(planType: planType, price: price)
+
         isPurchasing = true
         do {
-            try await subscriptionManager.purchase(package)
+            let transaction = try await subscriptionManager.purchase(package)
+
+            if transaction != nil {
+                // Purchase completed successfully
+                AnalyticsManager.shared.trackPurchaseCompleted(planType: planType, price: price)
+            }
+            // If transaction is nil, user cancelled (don't track this)
         } catch {
+            // Purchase failed
+            AnalyticsManager.shared.trackPurchaseFailed(planType: planType, error: error.localizedDescription)
             subscriptionManager.errorMessage = error.localizedDescription
         }
         isPurchasing = false

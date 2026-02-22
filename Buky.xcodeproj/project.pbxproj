@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B83F928A2F49E6850078140F /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = B83F92892F49E6850078140F /* RevenueCat */; };
+		B83F928F2F4A7BA50078140F /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = B83F928E2F4A7BA50078140F /* Mixpanel */; };
 		B8685EB02F32589900EB9D5F /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = B8685EAF2F32589900EB9D5F /* SwiftfulRouting */; };
 		B8D989432F376E53002B5C02 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B8D989422F376E53002B5C02 /* Lottie */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 			files = (
 				B8685EB02F32589900EB9D5F /* SwiftfulRouting in Frameworks */,
 				B8D989432F376E53002B5C02 /* Lottie in Frameworks */,
+				B83F928F2F4A7BA50078140F /* Mixpanel in Frameworks */,
 				B83F928A2F49E6850078140F /* RevenueCat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +147,7 @@
 				B8685EAF2F32589900EB9D5F /* SwiftfulRouting */,
 				B8D989422F376E53002B5C02 /* Lottie */,
 				B83F92892F49E6850078140F /* RevenueCat */,
+				B83F928E2F4A7BA50078140F /* Mixpanel */,
 			);
 			productName = Buky;
 			productReference = B8AE2ADF2F2A442E006F15D3 /* Buky.app */;
@@ -235,6 +238,7 @@
 				B8685EAB2F3257EE00EB9D5F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 				B8D989412F376E53002B5C02 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				B83F92882F49D8120078140F /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+				B83F928D2F4A7B980078140F /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B8AE2AE02F2A442E006F15D3 /* Products */;
@@ -613,6 +617,14 @@
 				minimumVersion = 5.59.2;
 			};
 		};
+		B83F928D2F4A7B980078140F /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
 		B8685EAB2F3257EE00EB9D5F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
@@ -636,6 +648,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B83F92882F49D8120078140F /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
 			productName = RevenueCat;
+		};
+		B83F928E2F4A7BA50078140F /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B83F928D2F4A7B980078140F /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
 		};
 		B8685EAF2F32589900EB9D5F /* SwiftfulRouting */ = {
 			isa = XCSwiftPackageProductDependency;

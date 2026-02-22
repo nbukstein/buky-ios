@@ -44,9 +44,15 @@ struct CreateStoryView: View {
             .padding()
             .padding(.horizontal)
             .background(.ultraThickMaterial)
-            
+
         }
         .edgesIgnoringSafeArea(.bottom)
+        .onAppear {
+            AnalyticsManager.shared.trackScreenView(screenName: "Create Story", source: "Menu")
+        }
+        .onDisappear {
+            AnalyticsManager.shared.trackScreenClosed(screenName: "Create Story")
+        }
     }
 
     private var bottomStickyButton: some View {
@@ -55,9 +61,11 @@ struct CreateStoryView: View {
                 showLimitReachedAlert = true
                 return
             }
+            let story = viewModel.createStory()
+            AnalyticsManager.shared.trackCreateStoryButtonTapped(story: story)
             viewModel.recordStoryCreation()
             router.showScreen(.push) { _ in
-                StoryTellingView(viewModel: .init(story: viewModel.createStory()))
+                StoryTellingView(viewModel: .init(story: story))
                     .modelContainer(BukyApp.sharedModelContainer)
             }
         }) {

@@ -100,6 +100,7 @@ struct ReadingTipsSheet: View {
 
     private var dismissButton: some View {
         Button {
+            AnalyticsManager.shared.trackReadingTipsDismissed(isFirstTime: isFirstTime)
             dismiss()
         } label: {
             Text("Got it!")

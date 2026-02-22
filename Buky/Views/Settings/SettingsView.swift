@@ -37,6 +37,7 @@ struct SettingsView: View {
                     }
 
                     Button {
+                        AnalyticsManager.shared.trackSettingsAction(action: "Manage Subscription Tapped")
                         showManageSubscriptions = true
                     } label: {
                         HStack(spacing: 12) {
@@ -55,6 +56,7 @@ struct SettingsView: View {
                     }
                 } else {
                     Button {
+                        AnalyticsManager.shared.trackSettingsAction(action: "Get Premium Tapped")
                         showSubscriptionView = true
                     } label: {
                         HStack(spacing: 12) {
@@ -117,6 +119,7 @@ struct SettingsView: View {
             // MARK: - General
             Section {
                 Button {
+                    AnalyticsManager.shared.trackSettingsAction(action: "Reading Tips Tapped")
                     showReadingTips = true
                 } label: {
                     HStack(spacing: 12) {
@@ -141,6 +144,7 @@ struct SettingsView: View {
                 }
 
                 Button {
+                    AnalyticsManager.shared.trackRestorePurchases()
                     Task {
                         await subscriptionManager.restorePurchases()
                     }
@@ -162,6 +166,12 @@ struct SettingsView: View {
             }
         }
         .navigationTitle(Text("Settings", comment: "Settings screen title"))
+        .onAppear {
+            AnalyticsManager.shared.trackScreenView(screenName: "Settings", source: "Menu")
+        }
+        .onDisappear {
+            AnalyticsManager.shared.trackScreenClosed(screenName: "Settings")
+        }
         .sheet(isPresented: $showReadingTips) {
             ReadingTipsSheet(isFirstTime: false)
         }

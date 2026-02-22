@@ -31,6 +31,9 @@ struct MenuView: View {
             mainContentView
                 .padding(.top, -15)
         }
+        .onAppear {
+            AnalyticsManager.shared.trackScreenView(screenName: "Menu")
+        }
     }
 
     private var headerContentView: some View {
@@ -48,6 +51,7 @@ struct MenuView: View {
                     .padding(.horizontal)
             }
             Button {
+                AnalyticsManager.shared.trackMenuAction(action: "Settings Tapped")
                 router.showScreen(.push) { _ in
                     SettingsView()
                 }
@@ -98,6 +102,7 @@ struct MenuView: View {
                         firstColor: isDarkMode ? Color.tertiaryBrand : Color.tertiaryBrand,
                         lastColor: isDarkMode ? Color.cuarterlyBrand : Color.cuarterlyBrand
             ) {
+                AnalyticsManager.shared.trackMenuAction(action: "Create Story Tapped")
                 router.showScreen(.push) { _ in
                     CreateStoryView(viewModel: .init())
                         .modelContainer(BukyApp.sharedModelContainer)
@@ -112,6 +117,7 @@ struct MenuView: View {
                         firstColor: isDarkMode ? Color.savedColorOne : Color.savedColorOne,
                         lastColor: isDarkMode ? Color.savedColorTwo : Color.savedColorTwo
             ) {
+                AnalyticsManager.shared.trackMenuAction(action: "Saved Stories Tapped")
                 router.showScreen(.push) { _ in
                     SavedStoriesView()
                         .modelContainer(BukyApp.sharedModelContainer)
